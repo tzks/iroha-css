@@ -1,0 +1,17 @@
+.wa-modal {
+  background: var(--wa-color-surface);
+  border: 1px solid var(--wa-color-border);
+  box-shadow: var(--wa-shadow-lg);
+  color: var(--wa-color-text);
+  inline-size: min(100%, var(--wa-modal-width, 34rem));
+  padding: var(--wa-space-6);
+}
+
+.wa-modal-backdrop {
+  background: rgb(35 32 31 / 45%);
+  display: grid;
+  inset: 0;
+  padding: var(--wa-space-4);
+  place-items: center;
+}
+

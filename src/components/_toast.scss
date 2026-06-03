@@ -1,0 +1,20 @@
+.wa-toast {
+  align-items: start;
+  background: var(--wa-color-surface);
+  border: 1px solid var(--wa-color-border);
+  box-shadow: var(--wa-shadow-md);
+  display: flex;
+  gap: var(--wa-space-3);
+  max-inline-size: 24rem;
+  padding: var(--wa-space-4);
+}
+
+.wa-toast::before {
+  background: var(--wa-color-primary);
+  block-size: 0.75rem;
+  border-radius: var(--wa-radius-pill);
+  content: "";
+  flex: 0 0 0.75rem;
+  margin-block-start: 0.35rem;
+}
+

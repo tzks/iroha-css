@@ -1,0 +1,54 @@
+.wa-donut {
+  --wa-donut-size: 8rem;
+  --wa-donut-thickness: 1rem;
+  --wa-donut-value: 72%;
+  --wa-donut-rest: var(--wa-color-surface-muted);
+
+  place-items: center center;
+  aspect-ratio: 1;
+  background: conic-gradient(var(--wa-color-primary) var(--wa-donut-value), var(--wa-donut-rest) 0);
+  border-radius: var(--wa-radius-pill);
+  display: inline-grid;
+  inline-size: var(--wa-donut-size);
+  position: relative;
+}
+
+.wa-donut::after {
+  background: var(--wa-color-surface);
+  border-radius: inherit;
+  content: "";
+  inset: var(--wa-donut-thickness);
+  position: absolute;
+}
+
+.wa-donut__value {
+  color: var(--wa-color-text);
+  font-family: var(--wa-font-serif);
+  font-size: var(--wa-text-xl);
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.wa-donut--accent {
+  background: conic-gradient(var(--wa-color-accent) var(--wa-donut-value), var(--wa-donut-rest) 0);
+}
+
+.wa-bar-chart {
+  align-items: end;
+  block-size: var(--wa-chart-height, 10rem);
+  display: flex;
+  gap: var(--wa-space-2);
+}
+
+.wa-bar-chart__bar {
+  background: var(--wa-color-primary);
+  flex: 1;
+  min-inline-size: 1rem;
+  block-size: var(--wa-bar-value, 50%);
+}
+
+.wa-bar-chart__bar:nth-child(even) {
+  background: var(--wa-color-accent);
+}
+

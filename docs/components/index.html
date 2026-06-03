@@ -20,8 +20,13 @@
       <div class="wa-container wa-stack wa-space-6">
         <div class="wa-flow">
           <h1 class="wa-hero__title">Component gallery</h1>
-          <p class="wa-text-muted">CSS-only components designed to inherit theme tokens.</p>
+          <p class="wa-text-muted">CSS-only components designed to inherit theme tokens. Data display, feedback, navigation, forms, and empty states are shown together.</p>
         </div>
+        <nav class="wa-breadcrumb" aria-label="Breadcrumb">
+          <li><a href="../">Home</a></li>
+          <li><a href="../themes/">Themes</a></li>
+          <li aria-current="page">Components</li>
+        </nav>
         <section class="wa-grid" aria-label="Component samples">
           <article class="wa-card wa-flow demo-component-sample">
             <h2>Buttons</h2>
@@ -93,9 +98,114 @@
             <blockquote class="wa-quote">Design the pause, not only the object.<cite>iroha-css</cite></blockquote>
             <p class="wa-callout wa-callout--accent">A bordered callout for quiet emphasis.</p>
           </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Donut chart</h2>
+            <div class="wa-cluster">
+              <div class="wa-donut" style="--wa-donut-value: 74%"><span class="wa-donut__value">74%</span></div>
+              <div class="wa-donut wa-donut--accent" style="--wa-donut-value: 42%"><span class="wa-donut__value">42%</span></div>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Bar chart</h2>
+            <div class="wa-bar-chart" aria-label="Sample bar chart">
+              <span class="wa-bar-chart__bar" style="--wa-bar-value: 40%"></span>
+              <span class="wa-bar-chart__bar" style="--wa-bar-value: 78%"></span>
+              <span class="wa-bar-chart__bar" style="--wa-bar-value: 55%"></span>
+              <span class="wa-bar-chart__bar" style="--wa-bar-value: 88%"></span>
+              <span class="wa-bar-chart__bar" style="--wa-bar-value: 62%"></span>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Progress and meter</h2>
+            <div class="wa-progress"><div class="wa-progress__bar" style="--wa-progress-value: 68%"></div></div>
+            <div class="wa-progress wa-progress--accent"><div class="wa-progress__bar" style="--wa-progress-value: 38%"></div></div>
+            <div class="wa-meter"><div class="wa-meter__track"><span class="wa-meter__marker" style="--wa-meter-value: 72%"></span></div></div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Avatars and chips</h2>
+            <div class="wa-avatar-group" aria-label="Contributors">
+              <span class="wa-avatar">伊</span>
+              <span class="wa-avatar">呂</span>
+              <span class="wa-avatar">波</span>
+            </div>
+            <div class="wa-cluster">
+              <span class="wa-chip">semantic</span>
+              <span class="wa-chip wa-chip--primary">theme aware</span>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Accordion</h2>
+            <div class="wa-accordion">
+              <details class="wa-accordion__item" open>
+                <summary>Why semantic classes?</summary>
+                <div class="wa-accordion__content">They keep AI-generated markup stable and readable.</div>
+              </details>
+              <details class="wa-accordion__item">
+                <summary>Can themes change components?</summary>
+                <div class="wa-accordion__content">Yes. Components inherit semantic tokens.</div>
+              </details>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Stepper</h2>
+            <ol class="wa-stepper">
+              <li class="wa-stepper__item"><span><strong>Choose tokens</strong><br /><span class="wa-text-muted">Start from roles.</span></span></li>
+              <li class="wa-stepper__item"><span><strong>Compose layout</strong><br /><span class="wa-text-muted">Use primitives.</span></span></li>
+              <li class="wa-stepper__item"><span><strong>Refine rhythm</strong><br /><span class="wa-text-muted">Reduce repetition.</span></span></li>
+            </ol>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Toast</h2>
+            <div class="wa-toast">
+              <div><strong>Saved</strong><p class="wa-text-muted">The theme tokens were applied.</p></div>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Modal surface</h2>
+            <div class="wa-modal">
+              <h3>Quiet confirmation</h3>
+              <p class="wa-text-muted">A modal surface without JavaScript behavior.</p>
+              <div class="wa-cluster"><button class="wa-button wa-button--sm" type="button">Confirm</button><button class="wa-button wa-button--ghost wa-button--sm" type="button">Cancel</button></div>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Dropdown</h2>
+            <div class="wa-dropdown">
+              <button class="wa-button wa-button--ghost" type="button">Actions</button>
+              <div class="wa-dropdown__menu">
+                <a class="wa-dropdown__item" href="#">Copy class</a>
+                <a class="wa-dropdown__item" href="#">View token</a>
+                <a class="wa-dropdown__item" href="#">Open docs</a>
+              </div>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Pagination</h2>
+            <nav class="wa-pagination" aria-label="Pagination">
+              <a class="wa-page" href="#">Prev</a>
+              <a class="wa-page" href="#">1</a>
+              <a class="wa-page" href="#" aria-current="page">2</a>
+              <a class="wa-page" href="#">3</a>
+              <a class="wa-page" href="#">Next</a>
+            </nav>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Skeleton</h2>
+            <div class="wa-stack">
+              <div class="wa-skeleton" style="--wa-skeleton-height: 1.25rem"></div>
+              <div class="wa-skeleton" style="--wa-skeleton-height: 1rem; inline-size: 80%"></div>
+              <div class="wa-skeleton" style="--wa-skeleton-height: 1rem; inline-size: 54%"></div>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Empty state</h2>
+            <div class="wa-empty">
+              <span class="wa-empty__mark"></span>
+              <div><strong>No layouts yet</strong><p class="wa-text-muted">Start with a section and stack.</p></div>
+            </div>
+          </article>
         </section>
       </div>
     </main>
   </body>
 </html>
-

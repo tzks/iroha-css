@@ -1,0 +1,16 @@
+.wa-empty {
+  place-items: center center;
+  border: 1px dashed var(--wa-color-border);
+  display: grid;
+  min-block-size: 14rem;
+  padding: var(--wa-space-6);
+  text-align: center;
+}
+
+.wa-empty__mark {
+  background: var(--wa-color-surface-muted);
+  block-size: 4rem;
+  border-radius: var(--wa-radius-pill);
+  inline-size: 4rem;
+}
+

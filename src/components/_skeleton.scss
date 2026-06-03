@@ -1,0 +1,18 @@
+.wa-skeleton {
+  background: linear-gradient(90deg, var(--wa-color-surface-muted), var(--wa-color-border), var(--wa-color-surface-muted));
+  background-size: 220% 100%;
+  border-radius: var(--wa-radius-sm);
+  block-size: var(--wa-skeleton-height, 1rem);
+  animation: wa-skeleton 1.4s var(--wa-ease-standard) infinite;
+}
+
+@keyframes wa-skeleton {
+  from {
+    background-position: 120% 0;
+  }
+
+  to {
+    background-position: -120% 0;
+  }
+}
+

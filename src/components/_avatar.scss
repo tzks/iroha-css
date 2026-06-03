@@ -1,0 +1,40 @@
+.wa-avatar {
+  align-items: center;
+  aspect-ratio: 1;
+  background: var(--wa-color-surface-muted);
+  border: 1px solid var(--wa-color-border);
+  border-radius: var(--wa-radius-pill);
+  color: var(--wa-color-text);
+  display: inline-flex;
+  font-weight: 700;
+  inline-size: var(--wa-avatar-size, 2.5rem);
+  justify-content: center;
+  overflow: hidden;
+}
+
+.wa-avatar img {
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+}
+
+.wa-avatar--sm {
+  --wa-avatar-size: 2rem;
+
+  font-size: var(--wa-text-sm);
+}
+
+.wa-avatar--lg {
+  --wa-avatar-size: 4rem;
+
+  font-size: var(--wa-text-xl);
+}
+
+.wa-avatar-group {
+  display: flex;
+}
+
+.wa-avatar-group .wa-avatar + .wa-avatar {
+  margin-inline-start: -0.65rem;
+}
+

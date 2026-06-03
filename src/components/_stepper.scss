@@ -1,0 +1,30 @@
+.wa-stepper {
+  counter-reset: wa-step;
+  display: grid;
+  gap: var(--wa-space-4);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wa-stepper__item {
+  counter-increment: wa-step;
+  display: grid;
+  gap: var(--wa-space-1);
+  grid-template-columns: auto 1fr;
+}
+
+.wa-stepper__item::before {
+  align-items: center;
+  background: var(--wa-color-primary);
+  border-radius: var(--wa-radius-pill);
+  color: var(--wa-color-primary-contrast);
+  content: counter(wa-step);
+  display: inline-flex;
+  font-size: var(--wa-text-sm);
+  font-weight: 700;
+  block-size: 1.75rem;
+  inline-size: 1.75rem;
+  justify-content: center;
+}
+

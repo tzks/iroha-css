@@ -1,0 +1,19 @@
+.wa-accordion {
+  border-block: 1px solid var(--wa-color-border);
+}
+
+.wa-accordion__item + .wa-accordion__item {
+  border-block-start: 1px solid var(--wa-color-border);
+}
+
+.wa-accordion summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: var(--wa-space-4) 0;
+}
+
+.wa-accordion__content {
+  color: var(--wa-color-text-muted);
+  padding-block-end: var(--wa-space-4);
+}
+

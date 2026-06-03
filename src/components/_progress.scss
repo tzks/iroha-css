@@ -1,0 +1,18 @@
+.wa-progress {
+  background: var(--wa-color-surface-muted);
+  border-radius: var(--wa-radius-pill);
+  block-size: var(--wa-progress-size, 0.55rem);
+  overflow: hidden;
+}
+
+.wa-progress__bar {
+  background: var(--wa-color-primary);
+  block-size: 100%;
+  border-radius: inherit;
+  inline-size: var(--wa-progress-value, 0%);
+}
+
+.wa-progress--accent .wa-progress__bar {
+  background: var(--wa-color-accent);
+}
+

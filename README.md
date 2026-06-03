@@ -64,7 +64,7 @@ Start with `docs/en/getting-started.md`, then inspect `docs/mcp/iroha-css.contex
 
 View the live demo on GitHub Pages: [https://tzks.github.io/iroha-css/](https://tzks.github.io/iroha-css/)
 
-The demo includes a theme color comparison, component gallery, layout pattern gallery, and full-page examples.
+The demo includes a theme color comparison, expanded component gallery with charts and feedback surfaces, layout pattern gallery, and full-page examples.
 
 ## Accessibility
 

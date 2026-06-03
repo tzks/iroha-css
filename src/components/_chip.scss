@@ -1,0 +1,18 @@
+.wa-chip {
+  align-items: center;
+  background: var(--wa-color-surface-muted);
+  border: 1px solid var(--wa-color-border);
+  border-radius: var(--wa-radius-pill);
+  color: var(--wa-color-text);
+  display: inline-flex;
+  font-size: var(--wa-text-sm);
+  gap: var(--wa-space-2);
+  padding: var(--wa-space-2) var(--wa-space-3);
+}
+
+.wa-chip--primary {
+  background: var(--wa-color-primary);
+  border-color: var(--wa-color-primary);
+  color: var(--wa-color-primary-contrast);
+}
+

@@ -1,0 +1,22 @@
+.wa-meter {
+  display: grid;
+  gap: var(--wa-space-2);
+}
+
+.wa-meter__track {
+  background: linear-gradient(90deg, var(--wa-color-danger), var(--wa-color-warning), var(--wa-color-success));
+  block-size: 0.5rem;
+  border-radius: var(--wa-radius-pill);
+  position: relative;
+}
+
+.wa-meter__marker {
+  background: var(--wa-color-text);
+  block-size: 1rem;
+  border-radius: var(--wa-radius-pill);
+  inline-size: 0.25rem;
+  inset-block-start: -0.25rem;
+  inset-inline-start: var(--wa-meter-value, 50%);
+  position: absolute;
+}
+

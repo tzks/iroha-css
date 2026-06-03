@@ -1,0 +1,25 @@
+.wa-pagination {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wa-space-2);
+}
+
+.wa-page {
+  align-items: center;
+  border: 1px solid var(--wa-color-border);
+  color: var(--wa-color-text);
+  display: inline-flex;
+  min-block-size: 2.25rem;
+  min-inline-size: 2.25rem;
+  justify-content: center;
+  padding: 0 var(--wa-space-3);
+  text-decoration: none;
+}
+
+.wa-page[aria-current="page"] {
+  background: var(--wa-color-primary);
+  border-color: var(--wa-color-primary);
+  color: var(--wa-color-primary-contrast);
+}
+

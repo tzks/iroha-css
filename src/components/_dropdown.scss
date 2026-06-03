@@ -1,0 +1,28 @@
+.wa-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.wa-dropdown__menu {
+  background: var(--wa-color-surface);
+  border: 1px solid var(--wa-color-border);
+  box-shadow: var(--wa-shadow-md);
+  display: grid;
+  gap: var(--wa-space-1);
+  inset-block-start: calc(100% + var(--wa-space-2));
+  min-inline-size: 12rem;
+  padding: var(--wa-space-2);
+  position: absolute;
+  z-index: 5;
+}
+
+.wa-dropdown__item {
+  color: var(--wa-color-text);
+  padding: var(--wa-space-2) var(--wa-space-3);
+  text-decoration: none;
+}
+
+.wa-dropdown__item:hover {
+  background: var(--wa-color-surface-muted);
+}
+
