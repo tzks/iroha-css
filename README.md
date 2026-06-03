@@ -4,7 +4,7 @@
 
 Make AI-generated websites feel hand-designed.
 
-iroha-css is a lightweight SCSS/CSS design system for semantic `wa-*` classes, quiet spacing, restrained surfaces, and Japanese-inspired themes. It is not a Tailwind replacement and not a full UI framework. It gives AI coding tools a better default vocabulary for building pages that do not look like the same centered hero and three-card SaaS layout.
+iroha-css is a lightweight SCSS/CSS design system for semantic `wa-*` classes, quiet spacing, paper-like surfaces, fine borders, and Japanese-inspired themes. It is not a Tailwind replacement and not a full UI framework. It gives AI coding tools a better default vocabulary for building pages that do not look like the same centered hero and three-card SaaS layout.
 
 See the live GitHub Pages demo first: [https://tzks.github.io/iroha-css/](https://tzks.github.io/iroha-css/)
 

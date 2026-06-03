@@ -1100,6 +1100,61 @@ textarea {
   color: var(--wa-color-primary-contrast);
 }
 
+.wa-washi {
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.38), transparent 24%), linear-gradient(135deg, rgba(255, 255, 255, 0.24) 0 25%, transparent 25% 50%, rgba(35, 32, 31, 0.03) 50% 75%, transparent 75%), var(--wa-color-surface-muted);
+  background-size: 100% 100%, 1.25rem 1.25rem, auto;
+  border: 1px solid var(--wa-color-border);
+}
+
+.wa-kasane {
+  box-shadow: 0.5rem 0.5rem 0 var(--wa-color-surface-muted), 0.5rem 0.5rem 0 1px var(--wa-color-border);
+}
+
+.wa-seal {
+  align-items: center;
+  aspect-ratio: 1;
+  background: var(--wa-color-danger);
+  border-radius: var(--wa-radius-sm);
+  color: var(--wa-color-primary-contrast);
+  display: inline-flex;
+  font-family: var(--wa-font-serif);
+  font-weight: 700;
+  inline-size: var(--wa-seal-size, 3rem);
+  justify-content: center;
+  line-height: 1;
+}
+
+.wa-kamon {
+  aspect-ratio: 1;
+  border: 1px solid currentcolor;
+  border-radius: var(--wa-radius-pill);
+  color: var(--wa-color-primary);
+  display: inline-grid;
+  font-family: var(--wa-font-serif);
+  inline-size: var(--wa-kamon-size, 4rem);
+  place-items: center;
+  position: relative;
+}
+
+.wa-kamon::before,
+.wa-kamon::after {
+  border: 1px solid currentcolor;
+  border-radius: inherit;
+  content: "";
+  inset: 0.45rem;
+  position: absolute;
+}
+
+.wa-kamon::after {
+  inset: 1rem;
+}
+
+.wa-vertical {
+  line-height: 1.8;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+}
+
 .wa-editorial {
   display: grid;
   gap: var(--wa-space-6);

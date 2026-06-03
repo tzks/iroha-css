@@ -4,7 +4,7 @@
 
 AI生成サイトを、人間が設計したようなWebデザインへ。
 
-iroha-css は、AI が HTML/CSS を生成するときに美しい初期値と設計ルールを与えるための軽量 SCSS/CSS デザインシステムです。単なる和色変数集ではなく、色、余白、影、レイアウト、コンポーネント、AI向けルールを統合します。
+iroha-css は、AI が HTML/CSS を生成するときに美しい初期値と設計ルールを与えるための軽量 SCSS/CSS デザインシステムです。単なる和色変数集ではなく、和色、間、和紙のような面、細い罫線、非対称レイアウト、コンポーネント、AI向けルールを統合します。
 
 まず GitHub Pages のデモを見てください: [https://tzks.github.io/iroha-css/](https://tzks.github.io/iroha-css/)
 

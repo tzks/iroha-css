@@ -1,4 +1,8 @@
 body {
+  background:
+    radial-gradient(circle at 12% 0%, rgb(214 162 58 / 10%), transparent 28rem),
+    radial-gradient(circle at 100% 18%, rgb(159 45 53 / 8%), transparent 24rem),
+    var(--wa-color-bg);
   overflow-x: hidden;
 }
 
@@ -10,14 +14,51 @@ body {
   color: var(--wa-color-primary);
   font-family: var(--wa-font-serif);
   font-size: var(--wa-text-xl);
+  text-decoration: none;
 }
 
 .demo-preview {
   background:
-    linear-gradient(90deg, var(--wa-color-border) 1px, transparent 1px),
-    linear-gradient(var(--wa-color-border) 1px, transparent 1px);
-  background-size: 3rem 3rem;
+    radial-gradient(circle at 18% 16%, rgb(214 162 58 / 16%), transparent 18rem),
+    linear-gradient(90deg, rgb(35 32 31 / 4%) 1px, transparent 1px),
+    linear-gradient(rgb(35 32 31 / 4%) 1px, transparent 1px),
+    var(--wa-color-bg);
+  background-size: auto, 2.5rem 2.5rem, 2.5rem 2.5rem, auto;
   border-block: 1px solid var(--wa-color-border);
+}
+
+.demo-wa-hero {
+  min-block-size: 76vh;
+}
+
+.demo-wa-symbols {
+  align-items: center;
+  display: flex;
+  gap: var(--wa-space-4);
+}
+
+.demo-wa-title-row {
+  align-items: start;
+  display: grid;
+  gap: var(--wa-space-5);
+  grid-template-columns: auto minmax(0, 1fr);
+}
+
+.demo-wa-title-row .wa-vertical {
+  color: var(--wa-color-primary);
+  font-family: var(--wa-font-serif);
+  font-size: var(--wa-text-sm);
+}
+
+.demo-wa-panel {
+  padding: var(--wa-space-6);
+}
+
+.demo-haiku {
+  border-inline-start: 1px solid var(--wa-color-border);
+  color: var(--wa-color-text-muted);
+  font-family: var(--wa-font-serif);
+  padding-inline-start: var(--wa-space-4);
 }
 
 .demo-swatch {
@@ -85,7 +126,9 @@ body {
 }
 
 .demo-theme-card {
-  background: var(--wa-color-bg);
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 18%), transparent 38%),
+    var(--wa-color-bg);
   border: 1px solid var(--wa-color-border);
   color: var(--wa-color-text);
   padding: var(--wa-space-5);

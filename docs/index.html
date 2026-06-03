@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/demo.css" />
   </head>
   <body>
-    <div class="demo-shell">
+    <div class="demo-shell" data-wa-theme="sakura">
       <header class="wa-container wa-nav">
         <a class="demo-mark" href="./">iroha-css</a>
         <nav class="wa-cluster" aria-label="Demo navigation">
@@ -21,20 +21,29 @@
       </header>
 
       <main>
-        <section class="wa-hero demo-preview">
+        <section class="wa-hero demo-preview demo-wa-hero">
           <div class="wa-container wa-split">
             <div class="wa-stack">
-              <p class="wa-hero__kicker">Human-feeling SCSS</p>
-              <h1 class="wa-hero__title wa-text-balance">Make AI-generated websites feel hand-designed.</h1>
-              <p class="wa-text-muted">A semantic CSS library with Japanese-inspired tokens, quiet layout primitives, and AI-facing usage rules.</p>
+              <div class="demo-wa-symbols">
+                <span class="wa-kamon">い</span>
+                <span class="wa-seal">和</span>
+              </div>
+              <div class="demo-wa-title-row">
+                <span class="wa-vertical">色と余白</span>
+                <div class="wa-stack">
+                  <h1 class="wa-hero__title wa-text-balance">iroha-css brings wa, ma, and quiet rhythm to AI-built websites.</h1>
+                  <p class="wa-text-muted">A semantic SCSS design system shaped by Japanese-inspired colors, paper-like surfaces, fine borders, and asymmetric composition.</p>
+                </div>
+              </div>
               <div class="wa-cluster">
                 <a class="wa-button" href="#examples">View examples</a>
                 <a class="wa-button wa-button--ghost" href="https://github.com/tzks/iroha-css">GitHub</a>
               </div>
             </div>
-            <aside class="wa-card wa-card--bordered wa-offset wa-flow">
-              <span class="wa-badge">data-wa-theme="ai"</span>
-              <p>Use semantic classes and restrained rhythm instead of generic hero/card patterns.</p>
+            <aside class="wa-card wa-card--bordered wa-offset wa-flow wa-washi wa-kasane demo-wa-panel">
+              <span class="wa-badge">data-wa-theme="sakura"</span>
+              <p>Use semantic classes, layered whitespace, and restrained color instead of generic SaaS composition.</p>
+              <p class="demo-haiku">AI の形を整え<br />人の手触りへ<br />余白から始める</p>
             </aside>
           </div>
         </section>
@@ -42,12 +51,12 @@
         <section id="themes" class="wa-section">
           <div class="wa-container wa-stack wa-space-6">
             <div class="wa-flow">
-              <p class="wa-hero__kicker">Themes</p>
-              <h2>Six role-based themes</h2>
+              <p class="wa-hero__kicker">Kasane themes</p>
+              <h2>Six Japanese-inspired color moods</h2>
             </div>
             <div class="wa-grid">
               <article class="wa-card wa-flow" data-wa-theme="sakura">
-                <h3>sakura</h3>
+                <h3><span class="wa-seal" style="--wa-seal-size: 2rem">桜</span> sakura</h3>
                 <div class="wa-grid" style="--wa-grid-min: 3rem">
                   <span class="demo-swatch demo-swatch--primary"></span>
                   <span class="demo-swatch demo-swatch--secondary"></span>
@@ -56,7 +65,7 @@
                 </div>
               </article>
               <article class="wa-card wa-flow" data-wa-theme="sumi">
-                <h3>sumi</h3>
+                <h3><span class="wa-kamon" style="--wa-kamon-size: 2rem">墨</span> sumi</h3>
                 <div class="wa-grid" style="--wa-grid-min: 3rem">
                   <span class="demo-swatch demo-swatch--primary"></span>
                   <span class="demo-swatch demo-swatch--secondary"></span>
@@ -65,7 +74,7 @@
                 </div>
               </article>
               <article class="wa-card wa-flow" data-wa-theme="matcha">
-                <h3>matcha</h3>
+                <h3><span class="wa-kamon" style="--wa-kamon-size: 2rem">茶</span> matcha</h3>
                 <div class="wa-grid" style="--wa-grid-min: 3rem">
                   <span class="demo-swatch demo-swatch--primary"></span>
                   <span class="demo-swatch demo-swatch--secondary"></span>
