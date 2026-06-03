@@ -4,13 +4,19 @@
   --wa-donut-value: 72%;
   --wa-donut-rest: var(--wa-color-surface-muted);
 
-  place-items: center center;
   aspect-ratio: 1;
-  background: conic-gradient(var(--wa-color-primary) var(--wa-donut-value), var(--wa-donut-rest) 0);
+  background: conic-gradient(
+    var(--wa-color-primary) 0 var(--wa-donut-value),
+    var(--wa-donut-rest) var(--wa-donut-value) 100%
+  );
   border-radius: var(--wa-radius-pill);
   display: inline-grid;
+  block-size: var(--wa-donut-size);
   inline-size: var(--wa-donut-size);
+  place-items: center;
   position: relative;
+  width: var(--wa-donut-size);
+  height: var(--wa-donut-size);
 }
 
 .wa-donut::after {
@@ -31,7 +37,10 @@
 }
 
 .wa-donut--accent {
-  background: conic-gradient(var(--wa-color-accent) var(--wa-donut-value), var(--wa-donut-rest) 0);
+  background: conic-gradient(
+    var(--wa-color-accent) 0 var(--wa-donut-value),
+    var(--wa-donut-rest) var(--wa-donut-value) 100%
+  );
 }
 
 .wa-bar-chart {
@@ -39,16 +48,21 @@
   block-size: var(--wa-chart-height, 10rem);
   display: flex;
   gap: var(--wa-space-2);
+  height: var(--wa-chart-height, 10rem);
+  min-inline-size: 12rem;
+  width: 100%;
 }
 
 .wa-bar-chart__bar {
+  align-self: end;
   background: var(--wa-color-primary);
-  flex: 1;
-  min-inline-size: 1rem;
   block-size: var(--wa-bar-value, 50%);
+  flex: 1;
+  height: var(--wa-bar-value, 50%);
+  min-inline-size: 1rem;
+  min-height: 0.25rem;
 }
 
 .wa-bar-chart__bar:nth-child(even) {
   background: var(--wa-color-accent);
 }
-

@@ -65,6 +65,19 @@ body {
   min-block-size: 15rem;
 }
 
+.demo-chart-sample {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wa-space-5);
+}
+
+.demo-measure-sample {
+  display: grid;
+  gap: var(--wa-space-4);
+  inline-size: min(100%, 24rem);
+}
+
 .demo-theme-board {
   display: grid;
   gap: var(--wa-space-4);

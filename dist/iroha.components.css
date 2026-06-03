@@ -427,14 +427,19 @@
   background: var(--wa-color-surface-muted);
   border-radius: var(--wa-radius-pill);
   block-size: var(--wa-progress-size, 0.55rem);
+  height: var(--wa-progress-size, 0.55rem);
+  inline-size: 100%;
   overflow: hidden;
+  width: 100%;
 }
 
 .wa-progress__bar {
   background: var(--wa-color-primary);
   block-size: 100%;
   border-radius: inherit;
+  height: 100%;
   inline-size: var(--wa-progress-value, 0%);
+  width: var(--wa-progress-value, 0%);
 }
 
 .wa-progress--accent .wa-progress__bar {
@@ -446,13 +451,16 @@
   --wa-donut-thickness: 1rem;
   --wa-donut-value: 72%;
   --wa-donut-rest: var(--wa-color-surface-muted);
-  place-items: center center;
   aspect-ratio: 1;
-  background: conic-gradient(var(--wa-color-primary) var(--wa-donut-value), var(--wa-donut-rest) 0);
+  background: conic-gradient(var(--wa-color-primary) 0 var(--wa-donut-value), var(--wa-donut-rest) var(--wa-donut-value) 100%);
   border-radius: var(--wa-radius-pill);
   display: inline-grid;
+  block-size: var(--wa-donut-size);
   inline-size: var(--wa-donut-size);
+  place-items: center;
   position: relative;
+  width: var(--wa-donut-size);
+  height: var(--wa-donut-size);
 }
 
 .wa-donut::after {
@@ -473,7 +481,7 @@
 }
 
 .wa-donut--accent {
-  background: conic-gradient(var(--wa-color-accent) var(--wa-donut-value), var(--wa-donut-rest) 0);
+  background: conic-gradient(var(--wa-color-accent) 0 var(--wa-donut-value), var(--wa-donut-rest) var(--wa-donut-value) 100%);
 }
 
 .wa-bar-chart {
@@ -481,13 +489,19 @@
   block-size: var(--wa-chart-height, 10rem);
   display: flex;
   gap: var(--wa-space-2);
+  height: var(--wa-chart-height, 10rem);
+  min-inline-size: 12rem;
+  width: 100%;
 }
 
 .wa-bar-chart__bar {
+  align-self: end;
   background: var(--wa-color-primary);
-  flex: 1;
-  min-inline-size: 1rem;
   block-size: var(--wa-bar-value, 50%);
+  flex: 1;
+  height: var(--wa-bar-value, 50%);
+  min-inline-size: 1rem;
+  min-height: 0.25rem;
 }
 
 .wa-bar-chart__bar:nth-child(even) {
@@ -497,23 +511,31 @@
 .wa-meter {
   display: grid;
   gap: var(--wa-space-2);
+  inline-size: 100%;
+  width: 100%;
 }
 
 .wa-meter__track {
   background: linear-gradient(90deg, var(--wa-color-danger), var(--wa-color-warning), var(--wa-color-success));
   block-size: 0.5rem;
   border-radius: var(--wa-radius-pill);
+  height: 0.5rem;
   position: relative;
+  width: 100%;
 }
 
 .wa-meter__marker {
   background: var(--wa-color-text);
   block-size: 1rem;
   border-radius: var(--wa-radius-pill);
+  height: 1rem;
   inline-size: 0.25rem;
   inset-block-start: -0.25rem;
   inset-inline-start: var(--wa-meter-value, 50%);
+  left: var(--wa-meter-value, 50%);
   position: absolute;
+  top: -0.25rem;
+  width: 0.25rem;
 }
 
 .wa-skeleton {
