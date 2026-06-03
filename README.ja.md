@@ -6,6 +6,8 @@ AI生成サイトを、人間が設計したようなWebデザインへ。
 
 iroha-css は、AI が HTML/CSS を生成するときに美しい初期値と設計ルールを与えるための軽量 SCSS/CSS デザインシステムです。単なる和色変数集ではなく、色、余白、影、レイアウト、コンポーネント、AI向けルールを統合します。
 
+まず GitHub Pages のデモを見てください: [https://tzks.github.io/iroha-css/](https://tzks.github.io/iroha-css/)
+
 ## インストール
 
 ```bash
@@ -49,6 +51,8 @@ CSS only の `wa-button`、`wa-card`、`wa-hero`、`wa-nav`、`wa-form`、`wa-ba
 `examples/` に landing-page、portfolio、blog、product、dashboard のプレーン HTML 例があります。
 
 ## GitHub Pages デモ
+
+GitHub Pages のデモはこちらです: [https://tzks.github.io/iroha-css/](https://tzks.github.io/iroha-css/)
 
 GitHub Pages の公開元を `main` ブランチの `/docs` に設定すると、`docs/index.html` がデモサイトとして表示されます。公開用 examples は `docs/examples/` にあります。
 
