@@ -1,0 +1,7 @@
+.wa-cover {
+  align-content: center;
+  display: grid;
+  min-block-size: var(--wa-cover-min, 70vh);
+  padding-block: var(--wa-space-8);
+}
+

@@ -1,0 +1,17 @@
+.wa-media {
+  align-items: start;
+  display: flex;
+  gap: var(--wa-space-4);
+}
+
+.wa-media__figure {
+  aspect-ratio: 1;
+  background: var(--wa-color-surface-muted);
+  border: 1px solid var(--wa-color-border);
+  flex: 0 0 var(--wa-media-size, 4rem);
+}
+
+.wa-media__body {
+  min-inline-size: 0;
+}
+

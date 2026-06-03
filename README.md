@@ -64,6 +64,8 @@ Start with `docs/en/getting-started.md`, then inspect `docs/mcp/iroha-css.contex
 
 View the live demo on GitHub Pages: [https://tzks.github.io/iroha-css/](https://tzks.github.io/iroha-css/)
 
+The demo includes a theme color comparison, component gallery, layout pattern gallery, and full-page examples.
+
 ## Accessibility
 
 iroha-css includes `:focus-visible` styles, a visually hidden utility, reduced-motion handling, and contrast-aware theme defaults.

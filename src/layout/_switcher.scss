@@ -1,0 +1,10 @@
+.wa-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wa-switcher-gap, var(--wa-space-5));
+}
+
+.wa-switcher > * {
+  flex: 1 1 calc((var(--wa-switcher-threshold, 44rem) - 100%) * 999);
+}
+

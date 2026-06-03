@@ -1,0 +1,18 @@
+.wa-stat {
+  border-block-start: 2px solid var(--wa-color-primary);
+  padding-block-start: var(--wa-space-3);
+}
+
+.wa-stat__value {
+  color: var(--wa-color-text);
+  font-family: var(--wa-font-serif);
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  line-height: 1;
+}
+
+.wa-stat__label {
+  color: var(--wa-color-text-muted);
+  font-size: var(--wa-text-sm);
+  margin-block-start: var(--wa-space-2);
+}
+

@@ -1,0 +1,18 @@
+.wa-sidebar {
+  align-items: start;
+  display: grid;
+  gap: var(--wa-sidebar-gap, var(--wa-space-6));
+  grid-template-columns: minmax(12rem, var(--wa-sidebar-width, 18rem)) minmax(0, 1fr);
+}
+
+.wa-sidebar--right {
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, var(--wa-sidebar-width, 18rem));
+}
+
+@media (width < 48rem) {
+  .wa-sidebar,
+  .wa-sidebar--right {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,10 @@
+.wa-divider {
+  border: 0;
+  border-block-start: 1px solid var(--wa-color-border);
+  margin-block: var(--wa-space-6);
+}
+
+.wa-divider--accent {
+  border-block-start-color: var(--wa-color-accent);
+}
+

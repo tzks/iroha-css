@@ -1,0 +1,18 @@
+.wa-quote {
+  border-inline-start: 0.25rem solid var(--wa-color-accent);
+  color: var(--wa-color-text);
+  font-family: var(--wa-font-serif);
+  font-size: var(--wa-text-lg);
+  line-height: var(--wa-leading-relaxed);
+  margin: 0;
+  padding: var(--wa-space-4) var(--wa-space-5);
+}
+
+.wa-quote cite {
+  color: var(--wa-color-text-muted);
+  display: block;
+  font-family: var(--wa-font-sans);
+  font-size: var(--wa-text-sm);
+  margin-block-start: var(--wa-space-3);
+}
+

@@ -55,3 +55,85 @@ body {
   background: color-mix(in srgb, var(--wa-color-bg), transparent 8%);
 }
 
+.demo-hero-grid {
+  display: grid;
+  gap: var(--wa-space-5);
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+}
+
+.demo-component-sample {
+  min-block-size: 15rem;
+}
+
+.demo-theme-board {
+  display: grid;
+  gap: var(--wa-space-4);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+}
+
+.demo-theme-card {
+  background: var(--wa-color-bg);
+  border: 1px solid var(--wa-color-border);
+  color: var(--wa-color-text);
+  padding: var(--wa-space-5);
+}
+
+.demo-token-row {
+  align-items: center;
+  display: grid;
+  gap: var(--wa-space-3);
+  grid-template-columns: 4rem minmax(0, 1fr);
+}
+
+.demo-token-chip {
+  block-size: 2rem;
+  border: 1px solid var(--wa-color-border);
+}
+
+.demo-token-chip--bg {
+  background: var(--wa-color-bg);
+}
+
+.demo-token-chip--surface {
+  background: var(--wa-color-surface);
+}
+
+.demo-token-chip--muted {
+  background: var(--wa-color-surface-muted);
+}
+
+.demo-token-chip--primary {
+  background: var(--wa-color-primary);
+}
+
+.demo-token-chip--secondary {
+  background: var(--wa-color-secondary);
+}
+
+.demo-token-chip--accent {
+  background: var(--wa-color-accent);
+}
+
+.demo-token-chip--danger {
+  background: var(--wa-color-danger);
+}
+
+.demo-layout-canvas {
+  background: var(--wa-color-surface-muted);
+  border: 1px solid var(--wa-color-border);
+  min-block-size: 16rem;
+  padding: var(--wa-space-4);
+}
+
+.demo-box {
+  background: var(--wa-color-surface);
+  border: 1px solid var(--wa-color-border);
+  min-block-size: 4rem;
+  padding: var(--wa-space-3);
+}
+
+@media (width < 52rem) {
+  .demo-hero-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,25 @@
+.wa-timeline {
+  display: grid;
+  gap: var(--wa-space-5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wa-timeline__item {
+  border-inline-start: 2px solid var(--wa-color-border);
+  padding-inline-start: var(--wa-space-5);
+  position: relative;
+}
+
+.wa-timeline__item::before {
+  background: var(--wa-color-primary);
+  block-size: 0.65rem;
+  border-radius: var(--wa-radius-pill);
+  content: "";
+  inline-size: 0.65rem;
+  inset-block-start: 0.45rem;
+  inset-inline-start: -0.4rem;
+  position: absolute;
+}
+

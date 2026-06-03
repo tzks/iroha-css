@@ -1,0 +1,29 @@
+.wa-table-wrap {
+  border: 1px solid var(--wa-color-border);
+  overflow-x: auto;
+}
+
+.wa-table {
+  border-collapse: collapse;
+  inline-size: 100%;
+  min-inline-size: 42rem;
+}
+
+.wa-table th,
+.wa-table td {
+  border-block-end: 1px solid var(--wa-color-border);
+  padding: var(--wa-space-3) var(--wa-space-4);
+  text-align: start;
+  vertical-align: top;
+}
+
+.wa-table th {
+  background: var(--wa-color-surface-muted);
+  color: var(--wa-color-text);
+  font-size: var(--wa-text-sm);
+}
+
+.wa-table tr:last-child td {
+  border-block-end: 0;
+}
+

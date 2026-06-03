@@ -1,0 +1,13 @@
+.wa-reel {
+  display: flex;
+  gap: var(--wa-reel-gap, var(--wa-space-4));
+  overflow-x: auto;
+  padding-block-end: var(--wa-space-2);
+  scroll-snap-type: x proximity;
+}
+
+.wa-reel > * {
+  flex: 0 0 var(--wa-reel-item, min(18rem, 85vw));
+  scroll-snap-align: start;
+}
+

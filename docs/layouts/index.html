@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-wa-theme="matcha">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Layouts - iroha-css Demo</title>
+    <link rel="stylesheet" href="../dist/iroha.css" />
+    <link rel="stylesheet" href="../assets/demo.css" />
+  </head>
+  <body>
+    <header class="wa-container wa-nav demo-example-nav">
+      <a class="demo-mark" href="../">iroha-css</a>
+      <nav class="wa-cluster" aria-label="Demo navigation">
+        <a href="../themes/">Themes</a>
+        <a href="../components/">Components</a>
+        <a href="../examples/landing-page/">Examples</a>
+      </nav>
+    </header>
+    <main class="wa-section">
+      <div class="wa-container wa-stack wa-space-6">
+        <div class="wa-flow">
+          <h1 class="wa-hero__title">Layout pattern gallery</h1>
+          <p class="wa-text-muted">Patterns for changing rhythm without filling the page with identical cards.</p>
+        </div>
+        <section class="wa-grid" aria-label="Layout samples">
+          <article class="wa-card wa-flow">
+            <h2>wa-split</h2>
+            <div class="demo-layout-canvas wa-split"><div class="demo-box">Text</div><div class="demo-box">Media</div></div>
+          </article>
+          <article class="wa-card wa-flow">
+            <h2>wa-sidebar</h2>
+            <div class="demo-layout-canvas wa-sidebar"><div class="demo-box">Nav</div><div class="demo-box">Main content</div></div>
+          </article>
+          <article class="wa-card wa-flow">
+            <h2>wa-switcher</h2>
+            <div class="demo-layout-canvas wa-switcher"><div class="demo-box">One</div><div class="demo-box">Two</div><div class="demo-box">Three</div></div>
+          </article>
+          <article class="wa-card wa-flow">
+            <h2>wa-reel</h2>
+            <div class="demo-layout-canvas wa-reel"><div class="demo-box">A</div><div class="demo-box">B</div><div class="demo-box">C</div><div class="demo-box">D</div></div>
+          </article>
+          <article class="wa-card wa-flow">
+            <h2>wa-layer</h2>
+            <div class="demo-layout-canvas wa-layer"><div class="demo-box">Base</div><div class="demo-box wa-offset">Offset layer</div></div>
+          </article>
+          <article class="wa-card wa-flow">
+            <h2>wa-masonry</h2>
+            <div class="demo-layout-canvas wa-masonry" style="--wa-masonry-columns: 2">
+              <div class="demo-box">Short</div><div class="demo-box" style="min-block-size: 7rem">Tall</div><div class="demo-box">Short</div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+

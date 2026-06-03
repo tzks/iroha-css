@@ -1,0 +1,11 @@
+.wa-callout {
+  background: var(--wa-color-surface-muted);
+  border: 1px solid var(--wa-color-border);
+  color: var(--wa-color-text);
+  padding: var(--wa-space-5);
+}
+
+.wa-callout--accent {
+  border-color: var(--wa-color-accent);
+}
+

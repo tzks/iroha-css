@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" data-wa-theme="ai">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components - iroha-css Demo</title>
+    <link rel="stylesheet" href="../dist/iroha.css" />
+    <link rel="stylesheet" href="../assets/demo.css" />
+  </head>
+  <body>
+    <header class="wa-container wa-nav demo-example-nav">
+      <a class="demo-mark" href="../">iroha-css</a>
+      <nav class="wa-cluster" aria-label="Demo navigation">
+        <a href="../themes/">Themes</a>
+        <a href="../layouts/">Layouts</a>
+        <a href="../examples/landing-page/">Examples</a>
+      </nav>
+    </header>
+    <main class="wa-section">
+      <div class="wa-container wa-stack wa-space-6">
+        <div class="wa-flow">
+          <h1 class="wa-hero__title">Component gallery</h1>
+          <p class="wa-text-muted">CSS-only components designed to inherit theme tokens.</p>
+        </div>
+        <section class="wa-grid" aria-label="Component samples">
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Buttons</h2>
+            <div class="wa-cluster">
+              <button class="wa-button" type="button">Primary</button>
+              <button class="wa-button wa-button--secondary" type="button">Secondary</button>
+              <button class="wa-button wa-button--ghost" type="button">Ghost</button>
+              <button class="wa-button wa-button--danger" type="button">Danger</button>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Cards</h2>
+            <div class="wa-grid" style="--wa-grid-min: 10rem">
+              <div class="wa-card wa-card--quiet">Quiet</div>
+              <div class="wa-card wa-card--bordered">Bordered</div>
+              <div class="wa-card wa-card--elevated">Elevated</div>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Form</h2>
+            <form class="wa-form">
+              <label class="wa-field">Name <input class="wa-input" value="Iroha" /></label>
+              <label class="wa-field">Message <textarea class="wa-textarea">Quiet layout, semantic CSS.</textarea></label>
+            </form>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Tabs</h2>
+            <div class="wa-tabs">
+              <div class="wa-tabs__list" role="tablist">
+                <button class="wa-tabs__tab" aria-selected="true" type="button">Tokens</button>
+                <button class="wa-tabs__tab" aria-selected="false" type="button">Layouts</button>
+              </div>
+              <div class="wa-tabs__panel">Use existing tokens before inventing CSS.</div>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Table</h2>
+            <div class="wa-table-wrap">
+              <table class="wa-table">
+                <thead><tr><th>Class</th><th>Role</th></tr></thead>
+                <tbody><tr><td>wa-stack</td><td>Vertical rhythm</td></tr><tr><td>wa-card</td><td>Surface</td></tr></tbody>
+              </table>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Timeline</h2>
+            <ol class="wa-timeline">
+              <li class="wa-timeline__item">Primitive tokens</li>
+              <li class="wa-timeline__item">Semantic tokens</li>
+              <li class="wa-timeline__item">Components</li>
+            </ol>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Stats</h2>
+            <div class="wa-grid" style="--wa-grid-min: 9rem">
+              <div class="wa-stat"><div class="wa-stat__value">6</div><div class="wa-stat__label">themes</div></div>
+              <div class="wa-stat"><div class="wa-stat__value">20+</div><div class="wa-stat__label">classes</div></div>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Media object</h2>
+            <div class="wa-media">
+              <div class="wa-media__figure"></div>
+              <div class="wa-media__body"><strong>Compact summary</strong><p class="wa-text-muted">A figure and text aligned without card-heavy composition.</p></div>
+            </div>
+          </article>
+          <article class="wa-card wa-flow demo-component-sample">
+            <h2>Quote and callout</h2>
+            <blockquote class="wa-quote">Design the pause, not only the object.<cite>iroha-css</cite></blockquote>
+            <p class="wa-callout wa-callout--accent">A bordered callout for quiet emphasis.</p>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+

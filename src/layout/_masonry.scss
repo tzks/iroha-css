@@ -1,0 +1,16 @@
+.wa-masonry {
+  column-count: var(--wa-masonry-columns, 3);
+  column-gap: var(--wa-space-5);
+}
+
+.wa-masonry > * {
+  break-inside: avoid;
+  margin-block-end: var(--wa-space-5);
+}
+
+@media (width < 48rem) {
+  .wa-masonry {
+    column-count: 1;
+  }
+}
+

@@ -54,6 +54,8 @@ CSS only の `wa-button`、`wa-card`、`wa-hero`、`wa-nav`、`wa-form`、`wa-ba
 
 GitHub Pages のデモはこちらです: [https://tzks.github.io/iroha-css/](https://tzks.github.io/iroha-css/)
 
+デモでは、テーマ別の配色比較、コンポーネント一覧、レイアウトパターン一覧、ページ例を確認できます。
+
 ## ライセンス
 
 MIT
