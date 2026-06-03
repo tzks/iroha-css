@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" data-wa-theme="ai">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iroha-css Demo</title>
+    <link rel="stylesheet" href="../dist/iroha.css" />
+    <link rel="stylesheet" href="./assets/demo.css" />
+  </head>
+  <body>
+    <div class="demo-shell">
+      <header class="wa-container wa-nav">
+        <a class="demo-mark" href="./">iroha-css</a>
+        <nav class="wa-cluster" aria-label="Demo navigation">
+          <a href="#themes">Themes</a>
+          <a href="#components">Components</a>
+          <a href="#layouts">Layouts</a>
+          <a href="#examples">Examples</a>
+          <a href="./ja/">日本語</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="wa-hero demo-preview">
+          <div class="wa-container wa-split">
+            <div class="wa-stack">
+              <p class="wa-hero__kicker">Human-feeling SCSS</p>
+              <h1 class="wa-hero__title wa-text-balance">Make AI-generated websites feel hand-designed.</h1>
+              <p class="wa-text-muted">A semantic CSS library with Japanese-inspired tokens, quiet layout primitives, and AI-facing usage rules.</p>
+              <div class="wa-cluster">
+                <a class="wa-button" href="#examples">View examples</a>
+                <a class="wa-button wa-button--ghost" href="https://github.com/tzks/iroha-css">GitHub</a>
+              </div>
+            </div>
+            <aside class="wa-card wa-card--bordered wa-offset wa-flow">
+              <span class="wa-badge">data-wa-theme="ai"</span>
+              <p>Use semantic classes and restrained rhythm instead of generic hero/card patterns.</p>
+            </aside>
+          </div>
+        </section>
+
+        <section id="themes" class="wa-section">
+          <div class="wa-container wa-stack wa-space-6">
+            <div class="wa-flow">
+              <p class="wa-hero__kicker">Themes</p>
+              <h2>Six role-based themes</h2>
+            </div>
+            <div class="wa-grid">
+              <article class="wa-card wa-flow" data-wa-theme="sakura">
+                <h3>sakura</h3>
+                <div class="wa-grid" style="--wa-grid-min: 3rem">
+                  <span class="demo-swatch demo-swatch--primary"></span>
+                  <span class="demo-swatch demo-swatch--secondary"></span>
+                  <span class="demo-swatch demo-swatch--accent"></span>
+                  <span class="demo-swatch demo-swatch--surface"></span>
+                </div>
+              </article>
+              <article class="wa-card wa-flow" data-wa-theme="sumi">
+                <h3>sumi</h3>
+                <div class="wa-grid" style="--wa-grid-min: 3rem">
+                  <span class="demo-swatch demo-swatch--primary"></span>
+                  <span class="demo-swatch demo-swatch--secondary"></span>
+                  <span class="demo-swatch demo-swatch--accent"></span>
+                  <span class="demo-swatch demo-swatch--surface"></span>
+                </div>
+              </article>
+              <article class="wa-card wa-flow" data-wa-theme="matcha">
+                <h3>matcha</h3>
+                <div class="wa-grid" style="--wa-grid-min: 3rem">
+                  <span class="demo-swatch demo-swatch--primary"></span>
+                  <span class="demo-swatch demo-swatch--secondary"></span>
+                  <span class="demo-swatch demo-swatch--accent"></span>
+                  <span class="demo-swatch demo-swatch--surface"></span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="components" class="wa-section wa-section--muted">
+          <div class="wa-container wa-stack wa-space-6">
+            <div class="wa-flow">
+              <p class="wa-hero__kicker">Components</p>
+              <h2>CSS-only building blocks</h2>
+            </div>
+            <div class="wa-grid">
+              <article class="wa-card wa-flow">
+                <h3>Buttons</h3>
+                <div class="wa-cluster">
+                  <a class="wa-button" href="#examples">Primary</a>
+                  <button class="wa-button wa-button--secondary" type="button">Secondary</button>
+                  <button class="wa-button wa-button--ghost" type="button">Ghost</button>
+                </div>
+              </article>
+              <article class="wa-card wa-flow">
+                <h3>Forms</h3>
+                <form class="wa-form">
+                  <label class="wa-field">Email <input class="wa-input" type="email" placeholder="hello@example.com" /></label>
+                  <button class="wa-button wa-button--sm" type="button">Submit</button>
+                </form>
+              </article>
+              <article class="wa-card wa-flow">
+                <h3>Alerts</h3>
+                <p class="wa-alert">A quiet callout with token-driven color.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="layouts" class="wa-section">
+          <div class="wa-container wa-editorial">
+            <div class="wa-flow">
+              <p class="wa-hero__kicker">Layouts</p>
+              <h2>Asymmetry, rhythm, and space</h2>
+            </div>
+            <div class="wa-stack wa-space-6">
+              <article class="wa-card wa-card--quiet wa-flow">
+                <h3>wa-editorial</h3>
+                <p class="wa-text-muted">Split content with uneven emphasis for pages that need an editorial rhythm.</p>
+              </article>
+              <article class="wa-card wa-card--bordered wa-offset wa-flow">
+                <h3>wa-offset</h3>
+                <p class="wa-text-muted">A small intentional shift creates hierarchy without decorative excess.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="examples" class="wa-section wa-section--muted">
+          <div class="wa-container wa-stack wa-space-6">
+            <div class="wa-flow">
+              <p class="wa-hero__kicker">Examples</p>
+              <h2>GitHub Pages-ready examples</h2>
+            </div>
+            <div class="wa-grid">
+              <a class="wa-card wa-flow" href="./examples/landing-page/"><h3>Landing page</h3><p class="wa-text-muted">AI LP structure without the generic SaaS template.</p></a>
+              <a class="wa-card wa-flow" href="./examples/portfolio/"><h3>Portfolio</h3><p class="wa-text-muted">Quiet creator-facing layout.</p></a>
+              <a class="wa-card wa-flow" href="./examples/blog/"><h3>Blog</h3><p class="wa-text-muted">Readable article rhythm.</p></a>
+              <a class="wa-card wa-flow" href="./examples/product/"><h3>Product</h3><p class="wa-text-muted">Practical product introduction.</p></a>
+              <a class="wa-card wa-flow" href="./examples/dashboard/"><h3>Dashboard</h3><p class="wa-text-muted">Dense, restrained operational UI.</p></a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="wa-footer">
+        <div class="wa-container wa-cluster">
+          <span>MIT licensed.</span>
+          <a href="./en/">Docs</a>
+          <a href="./ai/codex.md">AI guide</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+

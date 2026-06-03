@@ -48,7 +48,10 @@ CSS only の `wa-button`、`wa-card`、`wa-hero`、`wa-nav`、`wa-form`、`wa-ba
 
 `examples/` に landing-page、portfolio、blog、product、dashboard のプレーン HTML 例があります。
 
+## GitHub Pages デモ
+
+GitHub Pages の公開元を `main` ブランチの `/docs` に設定すると、`docs/index.html` がデモサイトとして表示されます。公開用 examples は `docs/examples/` にあります。
+
 ## ライセンス
 
 MIT
-

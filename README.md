@@ -58,6 +58,10 @@ Read the AI-facing guides in `docs/ai/`. They tell Codex, Cursor, and Claude Cod
 
 Start with `docs/en/getting-started.md`, then inspect `docs/mcp/iroha-css.context.md` for a structured AI-readable overview.
 
+## GitHub Pages Demo
+
+Set GitHub Pages to deploy from the `main` branch and `/docs` folder. The demo entry is `docs/index.html`, with example pages under `docs/examples/`.
+
 ## Accessibility
 
 iroha-css includes `:focus-visible` styles, a visually hidden utility, reduced-motion handling, and contrast-aware theme defaults.
@@ -65,4 +69,3 @@ iroha-css includes `:focus-visible` styles, a visually hidden utility, reduced-m
 ## License
 
 MIT
-

@@ -1,0 +1,57 @@
+body {
+  overflow-x: hidden;
+}
+
+.demo-shell {
+  min-block-size: 100vh;
+}
+
+.demo-mark {
+  color: var(--wa-color-primary);
+  font-family: var(--wa-font-serif);
+  font-size: var(--wa-text-xl);
+}
+
+.demo-preview {
+  background:
+    linear-gradient(90deg, var(--wa-color-border) 1px, transparent 1px),
+    linear-gradient(var(--wa-color-border) 1px, transparent 1px);
+  background-size: 3rem 3rem;
+  border-block: 1px solid var(--wa-color-border);
+}
+
+.demo-swatch {
+  aspect-ratio: 1;
+  border: 1px solid var(--wa-color-border);
+  border-radius: var(--wa-radius-sm);
+}
+
+.demo-swatch--primary {
+  background: var(--wa-color-primary);
+}
+
+.demo-swatch--secondary {
+  background: var(--wa-color-secondary);
+}
+
+.demo-swatch--accent {
+  background: var(--wa-color-accent);
+}
+
+.demo-swatch--surface {
+  background: var(--wa-color-surface-muted);
+}
+
+.demo-example-frame {
+  border: 1px solid var(--wa-color-border);
+  inline-size: 100%;
+  min-block-size: 34rem;
+}
+
+.demo-example-nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: color-mix(in srgb, var(--wa-color-bg), transparent 8%);
+}
+
