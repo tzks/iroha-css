@@ -1,0 +1,21 @@
+.wa-hero {
+  background: var(--wa-hero-bg);
+  color: var(--wa-hero-color);
+  padding-block: var(--wa-hero-padding-block);
+}
+
+.wa-hero__kicker {
+  color: var(--wa-hero-kicker-color);
+  font-size: var(--wa-text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wa-hero__title {
+  font-family: var(--wa-font-serif);
+  font-size: var(--wa-text-2xl);
+  line-height: 1.08;
+  margin: 0;
+}
+

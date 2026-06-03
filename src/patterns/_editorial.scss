@@ -1,0 +1,12 @@
+.wa-editorial {
+  display: grid;
+  gap: var(--wa-space-6);
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+}
+
+@media (width <= 48rem) {
+  .wa-editorial {
+    grid-template-columns: 1fr;
+  }
+}
+

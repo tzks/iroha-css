@@ -1,0 +1,5 @@
+.wa-container {
+  inline-size: min(100% - 2rem, var(--wa-container-max, 72rem));
+  margin-inline: auto;
+}
+

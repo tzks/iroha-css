@@ -1,0 +1,7 @@
+---
+description: HTML generation with iroha-css
+globs: ["**/*.html"]
+---
+
+Generate accessible HTML with landmarks, labels, and meaningful headings. Use `wa-container`, `wa-section`, `wa-stack`, `wa-split`, and component classes before custom CSS.
+

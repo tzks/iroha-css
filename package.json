@@ -1,0 +1,58 @@
+{
+  "name": "iroha-css",
+  "version": "0.1.0",
+  "description": "AI-first SCSS design system for human-feeling websites, inspired by Japanese colors.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzks/iroha-css.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "design-system",
+    "ai",
+    "japanese-colors",
+    "semantic-css"
+  ],
+  "style": "dist/iroha.css",
+  "sass": "src/index.scss",
+  "exports": {
+    ".": {
+      "sass": "./src/index.scss",
+      "style": "./dist/iroha.css",
+      "default": "./dist/iroha.css"
+    },
+    "./min": "./dist/iroha.min.css",
+    "./tokens": "./dist/iroha.tokens.css",
+    "./themes": "./dist/iroha.themes.css",
+    "./components": "./dist/iroha.components.css",
+    "./layouts": "./dist/iroha.layouts.css"
+  },
+  "files": [
+    "dist",
+    "src",
+    "docs",
+    "examples",
+    "README.md",
+    "README.ja.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "lint": "stylelint \"src/**/*.scss\"",
+    "format": "prettier --write \"**/*.{md,scss,css,js,json,html,yml}\"",
+    "check": "npm run lint && npm run build",
+    "pack:check": "npm pack --dry-run --cache ./.npm-cache"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "prettier": "^3.5.3",
+    "sass": "^1.89.2",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard-scss": "^15.0.1"
+  }
+}

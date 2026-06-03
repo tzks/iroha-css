@@ -1,0 +1,7 @@
+---
+description: iroha-css design system rules
+globs: ["**/*.{html,scss,css,md}"]
+---
+
+Use semantic `wa-*` classes and `data-wa-theme`. Prefer iroha-css tokens over raw colors. Keep layouts quiet, asymmetrical, and readable.
+

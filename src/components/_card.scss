@@ -1,0 +1,21 @@
+.wa-card {
+  background: var(--wa-card-bg);
+  border: var(--wa-card-border);
+  border-radius: var(--wa-card-radius);
+  box-shadow: var(--wa-card-shadow);
+  color: var(--wa-card-color);
+  padding: var(--wa-card-padding);
+}
+
+.wa-card--quiet {
+  --wa-card-bg: transparent;
+}
+
+.wa-card--bordered {
+  --wa-card-border: 1px solid var(--wa-color-border);
+}
+
+.wa-card--elevated {
+  --wa-card-shadow: var(--wa-shadow-md);
+}
+

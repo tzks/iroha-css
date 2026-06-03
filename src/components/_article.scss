@@ -1,0 +1,13 @@
+.wa-article {
+  color: var(--wa-color-text);
+  font-family: var(--wa-font-serif);
+  line-height: var(--wa-leading-relaxed);
+  max-inline-size: 68ch;
+}
+
+.wa-article h1,
+.wa-article h2,
+.wa-article h3 {
+  line-height: 1.25;
+}
+

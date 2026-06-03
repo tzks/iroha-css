@@ -1,0 +1,20 @@
+{
+  "name": "iroha-css",
+  "purpose": "Generate human-feeling web layouts using semantic wa-* classes and Japanese-inspired design tokens.",
+  "classPrefix": "wa-",
+  "themeAttribute": "data-wa-theme",
+  "entrypoints": {
+    "css": "dist/iroha.css",
+    "minifiedCss": "dist/iroha.min.css",
+    "scss": "src/index.scss"
+  },
+  "rules": [
+    "Use semantic wa-* classes.",
+    "Do not invent new color variables.",
+    "Do not use raw hex colors unless extending tokens.",
+    "Use role-based design tokens.",
+    "Avoid generic AI-looking SaaS layouts.",
+    "Prefer asymmetry, quiet spacing, restrained color, and editorial rhythm."
+  ]
+}
+

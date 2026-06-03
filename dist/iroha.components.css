@@ -1,0 +1,203 @@
+.wa-button {
+  align-items: center;
+  background: var(--wa-button-bg);
+  border: 1px solid var(--wa-button-border);
+  border-radius: var(--wa-button-radius);
+  color: var(--wa-button-color);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-weight: 650;
+  gap: var(--wa-space-2);
+  justify-content: center;
+  line-height: 1.2;
+  padding: var(--wa-button-padding-y) var(--wa-button-padding-x);
+  text-decoration: none;
+  transition: background var(--wa-duration-fast) var(--wa-ease-standard), border-color var(--wa-duration-fast) var(--wa-ease-standard), transform var(--wa-duration-fast) var(--wa-ease-standard);
+}
+
+.wa-button:hover {
+  transform: translateY(-1px);
+}
+
+.wa-button:focus-visible {
+  box-shadow: var(--wa-focus-ring);
+  outline: 0;
+}
+
+.wa-button:disabled,
+.wa-button[aria-disabled=true] {
+  cursor: not-allowed;
+  opacity: 0.55;
+  transform: none;
+}
+
+.wa-button--secondary {
+  --wa-button-bg: var(--wa-color-secondary);
+}
+
+.wa-button--ghost {
+  --wa-button-bg: transparent;
+  --wa-button-border: var(--wa-color-border);
+  --wa-button-color: var(--wa-color-text);
+}
+
+.wa-button--danger {
+  --wa-button-bg: var(--wa-color-danger);
+}
+
+.wa-button--sm {
+  --wa-button-padding-x: var(--wa-space-3);
+  --wa-button-padding-y: var(--wa-space-2);
+  font-size: var(--wa-text-sm);
+}
+
+.wa-button--lg {
+  --wa-button-padding-x: var(--wa-space-6);
+  --wa-button-padding-y: var(--wa-space-4);
+}
+
+.wa-button--block {
+  inline-size: 100%;
+}
+
+.wa-card {
+  background: var(--wa-card-bg);
+  border: var(--wa-card-border);
+  border-radius: var(--wa-card-radius);
+  box-shadow: var(--wa-card-shadow);
+  color: var(--wa-card-color);
+  padding: var(--wa-card-padding);
+}
+
+.wa-card--quiet {
+  --wa-card-bg: transparent;
+}
+
+.wa-card--bordered {
+  --wa-card-border: 1px solid var(--wa-color-border);
+}
+
+.wa-card--elevated {
+  --wa-card-shadow: var(--wa-shadow-md);
+}
+
+.wa-hero {
+  background: var(--wa-hero-bg);
+  color: var(--wa-hero-color);
+  padding-block: var(--wa-hero-padding-block);
+}
+
+.wa-hero__kicker {
+  color: var(--wa-hero-kicker-color);
+  font-size: var(--wa-text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.wa-hero__title {
+  font-family: var(--wa-font-serif);
+  font-size: var(--wa-text-2xl);
+  line-height: 1.08;
+  margin: 0;
+}
+
+.wa-nav {
+  align-items: center;
+  border-block-end: 1px solid var(--wa-color-border);
+  display: flex;
+  gap: var(--wa-space-4);
+  justify-content: space-between;
+  padding-block: var(--wa-space-4);
+}
+
+.wa-nav a {
+  color: var(--wa-color-text);
+  text-decoration-color: transparent;
+}
+
+.wa-nav a:focus-visible,
+.wa-nav a:hover {
+  text-decoration-color: currentcolor;
+}
+
+.wa-form {
+  display: grid;
+  gap: var(--wa-space-4);
+}
+
+.wa-field {
+  display: grid;
+  gap: var(--wa-space-2);
+}
+
+.wa-input,
+.wa-select,
+.wa-textarea {
+  background: var(--wa-input-bg);
+  border: 1px solid var(--wa-input-border);
+  border-radius: var(--wa-input-radius);
+  color: var(--wa-input-color);
+  font: inherit;
+  inline-size: 100%;
+  padding: var(--wa-space-3);
+}
+
+.wa-input:focus-visible,
+.wa-select:focus-visible,
+.wa-textarea:focus-visible {
+  box-shadow: var(--wa-input-focus-ring);
+  outline: 0;
+}
+
+.wa-error {
+  color: var(--wa-color-danger);
+  font-size: var(--wa-text-sm);
+}
+
+.wa-badge {
+  align-items: center;
+  background: var(--wa-color-surface-muted);
+  border: 1px solid var(--wa-color-border);
+  border-radius: var(--wa-radius-pill);
+  color: var(--wa-color-text);
+  display: inline-flex;
+  font-size: var(--wa-text-sm);
+  gap: var(--wa-space-1);
+  padding: var(--wa-space-1) var(--wa-space-3);
+}
+
+.wa-alert {
+  background: var(--wa-color-surface-muted);
+  border-inline-start: 0.25rem solid var(--wa-color-primary);
+  color: var(--wa-color-text);
+  padding: var(--wa-space-4);
+}
+
+.wa-alert--danger {
+  border-inline-start-color: var(--wa-color-danger);
+}
+
+.wa-alert--success {
+  border-inline-start-color: var(--wa-color-success);
+}
+
+.wa-article {
+  color: var(--wa-color-text);
+  font-family: var(--wa-font-serif);
+  line-height: var(--wa-leading-relaxed);
+  max-inline-size: 68ch;
+}
+
+.wa-article h1,
+.wa-article h2,
+.wa-article h3 {
+  line-height: 1.25;
+}
+
+.wa-footer {
+  border-block-start: 1px solid var(--wa-color-border);
+  color: var(--wa-color-text-muted);
+  padding-block: var(--wa-space-6);
+}

@@ -1,0 +1,4 @@
+.wa-flow > * + * {
+  margin-block-start: var(--wa-flow-gap, 1em);
+}
+

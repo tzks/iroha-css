@@ -1,0 +1,9 @@
+.wa-layer {
+  display: grid;
+  isolation: isolate;
+}
+
+.wa-layer > * {
+  grid-area: 1 / 1;
+}
+

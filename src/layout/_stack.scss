@@ -1,0 +1,6 @@
+.wa-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--wa-stack-gap, var(--wa-space-4));
+}
+

@@ -1,0 +1,9 @@
+{
+  "prompts": [
+    {
+      "name": "human-feeling-landing",
+      "text": "Create a landing page with iroha-css, semantic wa-* classes, restrained color, asymmetry, and no generic centered gradient hero."
+    }
+  ]
+}
+

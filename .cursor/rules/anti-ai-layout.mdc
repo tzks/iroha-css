@@ -1,0 +1,7 @@
+---
+description: Avoid generic AI-looking layouts
+globs: ["**/*.{html,md}"]
+---
+
+Avoid centered hero plus gradient plus three identical cards. Vary rhythm between sections and use restrained color accents.
+

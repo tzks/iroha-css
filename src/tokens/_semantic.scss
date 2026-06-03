@@ -1,0 +1,38 @@
+:root {
+  --wa-color-bg: var(--wa-iro-gofun);
+  --wa-color-surface: #fff;
+  --wa-color-surface-muted: var(--wa-iro-kinari);
+  --wa-color-text: var(--wa-iro-sumi);
+  --wa-color-text-muted: var(--wa-iro-nezumi);
+  --wa-color-primary: var(--wa-iro-ai);
+  --wa-color-primary-contrast: #fff;
+  --wa-color-secondary: var(--wa-iro-matcha);
+  --wa-color-accent: var(--wa-iro-yamabuki);
+  --wa-color-border: var(--wa-iro-usuzumi);
+  --wa-color-danger: var(--wa-iro-kurenai);
+  --wa-color-success: #3f6f55;
+  --wa-color-warning: var(--wa-iro-yamabuki);
+  --wa-focus-ring: 0 0 0 3px rgb(36 71 101 / 26%);
+  --wa-button-bg: var(--wa-color-primary);
+  --wa-button-color: var(--wa-color-primary-contrast);
+  --wa-button-border: transparent;
+  --wa-button-radius: var(--wa-radius-md);
+  --wa-button-padding-x: var(--wa-space-5);
+  --wa-button-padding-y: var(--wa-space-3);
+  --wa-card-bg: var(--wa-color-surface);
+  --wa-card-color: var(--wa-color-text);
+  --wa-card-border: 1px solid var(--wa-color-border);
+  --wa-card-radius: var(--wa-radius-md);
+  --wa-card-shadow: none;
+  --wa-card-padding: var(--wa-space-5);
+  --wa-hero-bg: var(--wa-color-bg);
+  --wa-hero-color: var(--wa-color-text);
+  --wa-hero-padding-block: clamp(4rem, 12vw, 9rem);
+  --wa-hero-kicker-color: var(--wa-color-primary);
+  --wa-input-bg: var(--wa-color-surface);
+  --wa-input-color: var(--wa-color-text);
+  --wa-input-border: var(--wa-color-border);
+  --wa-input-radius: var(--wa-radius-sm);
+  --wa-input-focus-ring: var(--wa-focus-ring);
+}
+

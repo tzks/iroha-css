@@ -1,0 +1,12 @@
+.wa-badge {
+  align-items: center;
+  background: var(--wa-color-surface-muted);
+  border: 1px solid var(--wa-color-border);
+  border-radius: var(--wa-radius-pill);
+  color: var(--wa-color-text);
+  display: inline-flex;
+  font-size: var(--wa-text-sm);
+  gap: var(--wa-space-1);
+  padding: var(--wa-space-1) var(--wa-space-3);
+}
+

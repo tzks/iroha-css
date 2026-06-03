@@ -1,0 +1,103 @@
+:root {
+  --wa-iro-sakura: #e8b7bd;
+  --wa-iro-sumi: #23201f;
+  --wa-iro-ai: #244765;
+  --wa-iro-matcha: #74855f;
+  --wa-iro-kurenai: #9f2d35;
+  --wa-iro-yamabuki: #d6a23a;
+  --wa-iro-gofun: #fbfaf4;
+  --wa-iro-kinari: #f4efe3;
+  --wa-iro-nezumi: #74706c;
+  --wa-iro-usuzumi: #d8d3ca;
+}
+
+:root {
+  --wa-space-1: 0.25rem;
+  --wa-space-2: 0.5rem;
+  --wa-space-3: 0.75rem;
+  --wa-space-4: 1rem;
+  --wa-space-5: 1.5rem;
+  --wa-space-6: 2rem;
+  --wa-space-8: 3rem;
+  --wa-space-10: 4.5rem;
+  --wa-space-section: clamp(3rem, 8vw, 7rem);
+}
+
+:root {
+  --wa-radius-sm: 0.125rem;
+  --wa-radius-md: 0.25rem;
+  --wa-radius-lg: 0.5rem;
+  --wa-radius-pill: 999px;
+}
+
+:root {
+  --wa-shadow-sm: 0 1px 2px rgb(35 32 31 / 8%);
+  --wa-shadow-md: 0 8px 24px rgb(35 32 31 / 10%);
+  --wa-shadow-lg: 0 18px 48px rgb(35 32 31 / 14%);
+}
+
+:root {
+  --wa-font-sans: ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
+  --wa-font-serif: "Hiragino Mincho ProN", "Yu Mincho", ui-serif, georgia, serif;
+  --wa-text-sm: 0.875rem;
+  --wa-text-md: 1rem;
+  --wa-text-lg: 1.125rem;
+  --wa-text-xl: 1.5rem;
+  --wa-text-2xl: clamp(2rem, 5vw, 4rem);
+  --wa-leading-normal: 1.6;
+  --wa-leading-relaxed: 1.9;
+}
+
+:root {
+  --wa-duration-fast: 140ms;
+  --wa-duration-normal: 220ms;
+  --wa-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+:root {
+  --wa-color-bg: var(--wa-iro-gofun);
+  --wa-color-surface: #fff;
+  --wa-color-surface-muted: var(--wa-iro-kinari);
+  --wa-color-text: var(--wa-iro-sumi);
+  --wa-color-text-muted: var(--wa-iro-nezumi);
+  --wa-color-primary: var(--wa-iro-ai);
+  --wa-color-primary-contrast: #fff;
+  --wa-color-secondary: var(--wa-iro-matcha);
+  --wa-color-accent: var(--wa-iro-yamabuki);
+  --wa-color-border: var(--wa-iro-usuzumi);
+  --wa-color-danger: var(--wa-iro-kurenai);
+  --wa-color-success: #3f6f55;
+  --wa-color-warning: var(--wa-iro-yamabuki);
+  --wa-focus-ring: 0 0 0 3px rgb(36 71 101 / 26%);
+  --wa-button-bg: var(--wa-color-primary);
+  --wa-button-color: var(--wa-color-primary-contrast);
+  --wa-button-border: transparent;
+  --wa-button-radius: var(--wa-radius-md);
+  --wa-button-padding-x: var(--wa-space-5);
+  --wa-button-padding-y: var(--wa-space-3);
+  --wa-card-bg: var(--wa-color-surface);
+  --wa-card-color: var(--wa-color-text);
+  --wa-card-border: 1px solid var(--wa-color-border);
+  --wa-card-radius: var(--wa-radius-md);
+  --wa-card-shadow: none;
+  --wa-card-padding: var(--wa-space-5);
+  --wa-hero-bg: var(--wa-color-bg);
+  --wa-hero-color: var(--wa-color-text);
+  --wa-hero-padding-block: clamp(4rem, 12vw, 9rem);
+  --wa-hero-kicker-color: var(--wa-color-primary);
+  --wa-input-bg: var(--wa-color-surface);
+  --wa-input-color: var(--wa-color-text);
+  --wa-input-border: var(--wa-color-border);
+  --wa-input-radius: var(--wa-radius-sm);
+  --wa-input-focus-ring: var(--wa-focus-ring);
+}

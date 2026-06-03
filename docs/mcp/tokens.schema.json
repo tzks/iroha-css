@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "iroha-css tokens",
+  "type": "object",
+  "properties": {
+    "primitive": { "type": "array", "items": { "type": "string" } },
+    "semantic": { "type": "array", "items": { "type": "string" } },
+    "component": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["primitive", "semantic", "component"]
+}
+

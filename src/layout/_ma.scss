@@ -1,0 +1,8 @@
+.wa-ma {
+  padding-block: var(--wa-ma-block, clamp(2rem, 7vw, 6rem));
+}
+
+.wa-ma--wide {
+  --wa-ma-block: clamp(4rem, 12vw, 10rem);
+}
+

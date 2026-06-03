@@ -1,0 +1,12 @@
+:root {
+  --wa-font-sans: ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", sans-serif;
+  --wa-font-serif: "Hiragino Mincho ProN", "Yu Mincho", ui-serif, georgia, serif;
+  --wa-text-sm: 0.875rem;
+  --wa-text-md: 1rem;
+  --wa-text-lg: 1.125rem;
+  --wa-text-xl: 1.5rem;
+  --wa-text-2xl: clamp(2rem, 5vw, 4rem);
+  --wa-leading-normal: 1.6;
+  --wa-leading-relaxed: 1.9;
+}
+

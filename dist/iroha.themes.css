@@ -1,0 +1,55 @@
+[data-wa-theme=sakura] {
+  --wa-color-bg: #fcf7f5;
+  --wa-color-surface-muted: #f5e7e4;
+  --wa-color-primary: #9b4f5c;
+  --wa-color-secondary: #7f6b5d;
+  --wa-color-accent: var(--wa-iro-sakura);
+  --wa-focus-ring: 0 0 0 3px rgb(155 79 92 / 24%);
+}
+
+[data-wa-theme=sumi] {
+  --wa-color-bg: #171513;
+  --wa-color-surface: #24211f;
+  --wa-color-surface-muted: #302c29;
+  --wa-color-text: #f5f0e8;
+  --wa-color-text-muted: #c6bbb0;
+  --wa-color-primary: #d4c2a7;
+  --wa-color-primary-contrast: #171513;
+  --wa-color-border: #48413a;
+  --wa-focus-ring: 0 0 0 3px rgb(212 194 167 / 30%);
+}
+
+[data-wa-theme=ai] {
+  --wa-color-bg: #f3f7f8;
+  --wa-color-surface-muted: #e6eef1;
+  --wa-color-primary: var(--wa-iro-ai);
+  --wa-color-secondary: #59798e;
+  --wa-color-accent: #b58e4f;
+}
+
+[data-wa-theme=matcha] {
+  --wa-color-bg: #f7f6ed;
+  --wa-color-surface-muted: #e9ead9;
+  --wa-color-primary: #526542;
+  --wa-color-secondary: var(--wa-iro-matcha);
+  --wa-color-accent: #b99752;
+  --wa-focus-ring: 0 0 0 3px rgb(82 101 66 / 25%);
+}
+
+[data-wa-theme=kurenai] {
+  --wa-color-bg: #fbf6f2;
+  --wa-color-surface-muted: #f0dfd9;
+  --wa-color-primary: var(--wa-iro-kurenai);
+  --wa-color-secondary: #533b38;
+  --wa-color-accent: #d8a141;
+  --wa-focus-ring: 0 0 0 3px rgb(159 45 53 / 24%);
+}
+
+[data-wa-theme=yamabuki] {
+  --wa-color-bg: #fffaf0;
+  --wa-color-surface-muted: #f6e8c8;
+  --wa-color-primary: #76551e;
+  --wa-color-secondary: #6d744d;
+  --wa-color-accent: var(--wa-iro-yamabuki);
+  --wa-focus-ring: 0 0 0 3px rgb(214 162 58 / 32%);
+}

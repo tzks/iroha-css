@@ -1,0 +1,19 @@
+.wa-nav {
+  align-items: center;
+  border-block-end: 1px solid var(--wa-color-border);
+  display: flex;
+  gap: var(--wa-space-4);
+  justify-content: space-between;
+  padding-block: var(--wa-space-4);
+}
+
+.wa-nav a {
+  color: var(--wa-color-text);
+  text-decoration-color: transparent;
+}
+
+.wa-nav a:focus-visible,
+.wa-nav a:hover {
+  text-decoration-color: currentcolor;
+}
+

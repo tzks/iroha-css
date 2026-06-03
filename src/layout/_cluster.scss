@@ -1,0 +1,7 @@
+.wa-cluster {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wa-cluster-gap, var(--wa-space-3));
+}
+

@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--wa-color-bg);
+  color: var(--wa-color-text);
+  font-family: var(--wa-font-sans);
+  line-height: var(--wa-leading-normal);
+}
+
+body {
+  background: var(--wa-color-bg);
+  color: var(--wa-color-text);
+  margin: 0;
+  min-block-size: 100vh;
+}
+
+a {
+  color: var(--wa-color-primary);
+}
+
+a:focus-visible {
+  box-shadow: var(--wa-focus-ring);
+  outline: 0;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-inline-size: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+

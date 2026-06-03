@@ -1,0 +1,8 @@
+.wa-section {
+  padding-block: var(--wa-section-padding, var(--wa-space-section));
+}
+
+.wa-section--muted {
+  background: var(--wa-color-surface-muted);
+}
+

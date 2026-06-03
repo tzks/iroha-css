@@ -1,0 +1,11 @@
+node_modules/
+.npm-cache/
+dist/*.map
+.DS_Store
+.idea/
+.env
+.env.*
+仕様書.md
+CHANGE.md
+AGENTS.md
+TASK.md

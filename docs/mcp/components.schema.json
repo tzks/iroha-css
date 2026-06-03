@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "iroha-css components",
+  "type": "object",
+  "properties": {
+    "class": { "type": "string", "pattern": "^wa-" },
+    "variants": { "type": "array", "items": { "type": "string" } }
+  },
+  "required": ["class"]
+}
+
