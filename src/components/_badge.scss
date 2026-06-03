@@ -2,7 +2,7 @@
   align-items: center;
   background: var(--wa-color-surface-muted);
   border: 1px solid var(--wa-color-border);
-  border-radius: var(--wa-radius-pill);
+  border-radius: var(--wa-radius-sm);
   color: var(--wa-color-text);
   display: inline-flex;
   font-size: var(--wa-text-sm);
@@ -10,3 +10,9 @@
   padding: var(--wa-space-1) var(--wa-space-3);
 }
 
+.wa-badge::before {
+  background: var(--wa-color-accent);
+  block-size: 0.45em;
+  content: "";
+  inline-size: 0.45em;
+}

@@ -22,6 +22,7 @@
 .wa-tabs__tab[aria-selected="true"] {
   border-block-end-color: var(--wa-color-primary);
   color: var(--wa-color-text);
+  font-family: var(--wa-font-serif);
 }
 
 .wa-tabs__tab:focus-visible {
@@ -30,8 +31,10 @@
 }
 
 .wa-tabs__panel {
-  background: var(--wa-color-surface);
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 18%), transparent 42%),
+    var(--wa-color-surface);
   border: 1px solid var(--wa-color-border);
+  border-block-start: 0.2rem solid var(--wa-color-accent);
   padding: var(--wa-space-5);
 }
-

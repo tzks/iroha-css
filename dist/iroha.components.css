@@ -3,6 +3,7 @@
   background: var(--wa-button-bg);
   border: 1px solid var(--wa-button-border);
   border-radius: var(--wa-button-radius);
+  box-shadow: inset 0 -1px 0 rgba(35, 32, 31, 0.12);
   color: var(--wa-button-color);
   cursor: pointer;
   display: inline-flex;
@@ -14,6 +15,14 @@
   padding: var(--wa-button-padding-y) var(--wa-button-padding-x);
   text-decoration: none;
   transition: background var(--wa-duration-fast) var(--wa-ease-standard), border-color var(--wa-duration-fast) var(--wa-ease-standard), transform var(--wa-duration-fast) var(--wa-ease-standard);
+}
+
+.wa-button::before {
+  background: currentcolor;
+  block-size: 1px;
+  content: "";
+  inline-size: 0.9em;
+  opacity: 0.42;
 }
 
 .wa-button:hover {
@@ -40,6 +49,7 @@
   --wa-button-bg: transparent;
   --wa-button-border: var(--wa-color-border);
   --wa-button-color: var(--wa-color-text);
+  box-shadow: inset 0 0 0 1px var(--wa-color-rule);
 }
 
 .wa-button--danger {
@@ -68,10 +78,25 @@
   box-shadow: var(--wa-card-shadow);
   color: var(--wa-card-color);
   padding: var(--wa-card-padding);
+  position: relative;
+}
+
+.wa-card::before {
+  background: var(--wa-card-accent);
+  block-size: 0.2rem;
+  content: "";
+  inline-size: clamp(2rem, 18%, 5rem);
+  inset-block-start: -1px;
+  inset-inline-start: var(--wa-card-padding);
+  position: absolute;
 }
 
 .wa-card--quiet {
   --wa-card-bg: transparent;
+}
+
+.wa-card--quiet::before {
+  display: none;
 }
 
 .wa-card--bordered {
@@ -79,7 +104,9 @@
 }
 
 .wa-card--elevated {
-  --wa-card-shadow: var(--wa-shadow-md);
+  --wa-card-shadow:
+    0.45rem 0.45rem 0 var(--wa-color-surface-muted),
+    0.45rem 0.45rem 0 1px var(--wa-color-border);
 }
 
 .wa-hero {
@@ -136,12 +163,13 @@
 .wa-select,
 .wa-textarea {
   background: var(--wa-input-bg);
-  border: 1px solid var(--wa-input-border);
+  border: 0;
+  border-block-end: 1px solid var(--wa-input-border);
   border-radius: var(--wa-input-radius);
   color: var(--wa-input-color);
   font: inherit;
   inline-size: 100%;
-  padding: var(--wa-space-3);
+  padding: var(--wa-space-3) var(--wa-space-2);
 }
 
 .wa-input:focus-visible,
@@ -160,7 +188,7 @@
   align-items: center;
   background: var(--wa-color-surface-muted);
   border: 1px solid var(--wa-color-border);
-  border-radius: var(--wa-radius-pill);
+  border-radius: var(--wa-radius-sm);
   color: var(--wa-color-text);
   display: inline-flex;
   font-size: var(--wa-text-sm);
@@ -168,19 +196,27 @@
   padding: var(--wa-space-1) var(--wa-space-3);
 }
 
+.wa-badge::before {
+  background: var(--wa-color-accent);
+  block-size: 0.45em;
+  content: "";
+  inline-size: 0.45em;
+}
+
 .wa-alert {
-  background: var(--wa-color-surface-muted);
-  border-inline-start: 0.25rem solid var(--wa-color-primary);
+  background: linear-gradient(90deg, var(--wa-color-primary) 0 0.25rem, transparent 0.25rem), var(--wa-color-surface-muted);
+  border: 1px solid var(--wa-color-border);
+  border-inline-start: 0;
   color: var(--wa-color-text);
-  padding: var(--wa-space-4);
+  padding: var(--wa-space-4) var(--wa-space-5);
 }
 
 .wa-alert--danger {
-  border-inline-start-color: var(--wa-color-danger);
+  background: linear-gradient(90deg, var(--wa-color-danger) 0 0.25rem, transparent 0.25rem), var(--wa-color-surface-muted);
 }
 
 .wa-alert--success {
-  border-inline-start-color: var(--wa-color-success);
+  background: linear-gradient(90deg, var(--wa-color-success) 0 0.25rem, transparent 0.25rem), var(--wa-color-surface-muted);
 }
 
 .wa-article {
@@ -222,7 +258,8 @@
 }
 
 .wa-table th {
-  background: var(--wa-color-surface-muted);
+  background: linear-gradient(90deg, var(--wa-color-rule) 1px, transparent 1px), var(--wa-color-surface-muted);
+  background-size: 1rem 100%;
   color: var(--wa-color-text);
   font-size: var(--wa-text-sm);
 }
@@ -255,6 +292,7 @@
 .wa-tabs__tab[aria-selected=true] {
   border-block-end-color: var(--wa-color-primary);
   color: var(--wa-color-text);
+  font-family: var(--wa-font-serif);
 }
 
 .wa-tabs__tab:focus-visible {
@@ -263,8 +301,9 @@
 }
 
 .wa-tabs__panel {
-  background: var(--wa-color-surface);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), transparent 42%), var(--wa-color-surface);
   border: 1px solid var(--wa-color-border);
+  border-block-start: 0.2rem solid var(--wa-color-accent);
   padding: var(--wa-space-5);
 }
 
@@ -424,8 +463,8 @@
 }
 
 .wa-progress {
-  background: var(--wa-color-surface-muted);
-  border-radius: var(--wa-radius-pill);
+  background: repeating-linear-gradient(90deg, transparent 0 0.75rem, var(--wa-color-rule) 0.75rem calc(0.75rem + 1px)), var(--wa-color-surface-muted);
+  border-radius: var(--wa-radius-sm);
   block-size: var(--wa-progress-size, 0.55rem);
   height: var(--wa-progress-size, 0.55rem);
   inline-size: 100%;
@@ -434,7 +473,7 @@
 }
 
 .wa-progress__bar {
-  background: var(--wa-color-primary);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.18), transparent), var(--wa-color-primary);
   block-size: 100%;
   border-radius: inherit;
   height: 100%;
@@ -450,7 +489,7 @@
   --wa-donut-size: 8rem;
   --wa-donut-thickness: 1rem;
   --wa-donut-value: 72%;
-  --wa-donut-rest: var(--wa-color-surface-muted);
+  --wa-donut-rest: color-mix(in srgb, var(--wa-color-surface-muted), var(--wa-color-border) 35%);
   aspect-ratio: 1;
   background: conic-gradient(var(--wa-color-primary) 0 var(--wa-donut-value), var(--wa-donut-rest) var(--wa-donut-value) 100%);
   border-radius: var(--wa-radius-pill);
@@ -496,7 +535,7 @@
 
 .wa-bar-chart__bar {
   align-self: end;
-  background: var(--wa-color-primary);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent), var(--wa-color-primary);
   block-size: var(--wa-bar-value, 50%);
   flex: 1;
   height: var(--wa-bar-value, 50%);
@@ -505,7 +544,7 @@
 }
 
 .wa-bar-chart__bar:nth-child(even) {
-  background: var(--wa-color-accent);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent), var(--wa-color-accent);
 }
 
 .wa-meter {
@@ -646,7 +685,7 @@
 
 .wa-toast {
   align-items: start;
-  background: var(--wa-color-surface);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), transparent 42%), var(--wa-color-surface);
   border: 1px solid var(--wa-color-border);
   box-shadow: var(--wa-shadow-md);
   display: flex;
@@ -656,12 +695,12 @@
 }
 
 .wa-toast::before {
-  background: var(--wa-color-primary);
-  block-size: 0.75rem;
-  border-radius: var(--wa-radius-pill);
+  background: var(--wa-color-danger);
+  block-size: 1.4rem;
+  border-radius: var(--wa-radius-sm);
   content: "";
-  flex: 0 0 0.75rem;
-  margin-block-start: 0.35rem;
+  flex: 0 0 1.4rem;
+  margin-block-start: 0.1rem;
 }
 
 .wa-accordion {

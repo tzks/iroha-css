@@ -12,19 +12,22 @@
   --wa-color-danger: var(--wa-iro-kurenai);
   --wa-color-success: #3f6f55;
   --wa-color-warning: var(--wa-iro-yamabuki);
+  --wa-color-paper-fiber: rgb(35 32 31 / 4%);
+  --wa-color-rule: rgb(35 32 31 / 12%);
   --wa-focus-ring: 0 0 0 3px rgb(36 71 101 / 26%);
   --wa-button-bg: var(--wa-color-primary);
   --wa-button-color: var(--wa-color-primary-contrast);
   --wa-button-border: transparent;
-  --wa-button-radius: var(--wa-radius-md);
+  --wa-button-radius: var(--wa-radius-sm);
   --wa-button-padding-x: var(--wa-space-5);
   --wa-button-padding-y: var(--wa-space-3);
-  --wa-card-bg: var(--wa-color-surface);
+  --wa-card-bg: linear-gradient(135deg, rgb(255 255 255 / 22%), transparent 42%), var(--wa-color-surface);
   --wa-card-color: var(--wa-color-text);
   --wa-card-border: 1px solid var(--wa-color-border);
-  --wa-card-radius: var(--wa-radius-md);
+  --wa-card-radius: var(--wa-radius-sm);
   --wa-card-shadow: none;
   --wa-card-padding: var(--wa-space-5);
+  --wa-card-accent: var(--wa-color-accent);
   --wa-hero-bg: var(--wa-color-bg);
   --wa-hero-color: var(--wa-color-text);
   --wa-hero-padding-block: clamp(4rem, 12vw, 9rem);
@@ -35,4 +38,3 @@
   --wa-input-radius: var(--wa-radius-sm);
   --wa-input-focus-ring: var(--wa-focus-ring);
 }
-

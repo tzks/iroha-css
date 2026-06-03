@@ -18,7 +18,10 @@
 }
 
 .wa-table th {
-  background: var(--wa-color-surface-muted);
+  background:
+    linear-gradient(90deg, var(--wa-color-rule) 1px, transparent 1px),
+    var(--wa-color-surface-muted);
+  background-size: 1rem 100%;
   color: var(--wa-color-text);
   font-size: var(--wa-text-sm);
 }
@@ -26,4 +29,3 @@
 .wa-table tr:last-child td {
   border-block-end: 0;
 }
-

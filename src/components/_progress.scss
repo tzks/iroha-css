@@ -1,6 +1,8 @@
 .wa-progress {
-  background: var(--wa-color-surface-muted);
-  border-radius: var(--wa-radius-pill);
+  background:
+    repeating-linear-gradient(90deg, transparent 0 0.75rem, var(--wa-color-rule) 0.75rem calc(0.75rem + 1px)),
+    var(--wa-color-surface-muted);
+  border-radius: var(--wa-radius-sm);
   block-size: var(--wa-progress-size, 0.55rem);
   height: var(--wa-progress-size, 0.55rem);
   inline-size: 100%;
@@ -9,7 +11,9 @@
 }
 
 .wa-progress__bar {
-  background: var(--wa-color-primary);
+  background:
+    linear-gradient(90deg, rgb(255 255 255 / 18%), transparent),
+    var(--wa-color-primary);
   block-size: 100%;
   border-radius: inherit;
   height: 100%;

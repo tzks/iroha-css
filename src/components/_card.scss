@@ -5,10 +5,25 @@
   box-shadow: var(--wa-card-shadow);
   color: var(--wa-card-color);
   padding: var(--wa-card-padding);
+  position: relative;
+}
+
+.wa-card::before {
+  background: var(--wa-card-accent);
+  block-size: 0.2rem;
+  content: "";
+  inline-size: clamp(2rem, 18%, 5rem);
+  inset-block-start: -1px;
+  inset-inline-start: var(--wa-card-padding);
+  position: absolute;
 }
 
 .wa-card--quiet {
   --wa-card-bg: transparent;
+}
+
+.wa-card--quiet::before {
+  display: none;
 }
 
 .wa-card--bordered {
@@ -16,6 +31,7 @@
 }
 
 .wa-card--elevated {
-  --wa-card-shadow: var(--wa-shadow-md);
+  --wa-card-shadow:
+    0.45rem 0.45rem 0 var(--wa-color-surface-muted),
+    0.45rem 0.45rem 0 1px var(--wa-color-border);
 }
-

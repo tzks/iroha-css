@@ -2,7 +2,7 @@
   --wa-donut-size: 8rem;
   --wa-donut-thickness: 1rem;
   --wa-donut-value: 72%;
-  --wa-donut-rest: var(--wa-color-surface-muted);
+  --wa-donut-rest: color-mix(in srgb, var(--wa-color-surface-muted), var(--wa-color-border) 35%);
 
   aspect-ratio: 1;
   background: conic-gradient(
@@ -55,7 +55,9 @@
 
 .wa-bar-chart__bar {
   align-self: end;
-  background: var(--wa-color-primary);
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 20%), transparent),
+    var(--wa-color-primary);
   block-size: var(--wa-bar-value, 50%);
   flex: 1;
   height: var(--wa-bar-value, 50%);
@@ -64,5 +66,7 @@
 }
 
 .wa-bar-chart__bar:nth-child(even) {
-  background: var(--wa-color-accent);
+  background:
+    linear-gradient(180deg, rgb(255 255 255 / 20%), transparent),
+    var(--wa-color-accent);
 }

@@ -12,12 +12,13 @@
 .wa-select,
 .wa-textarea {
   background: var(--wa-input-bg);
-  border: 1px solid var(--wa-input-border);
+  border: 0;
+  border-block-end: 1px solid var(--wa-input-border);
   border-radius: var(--wa-input-radius);
   color: var(--wa-input-color);
   font: inherit;
   inline-size: 100%;
-  padding: var(--wa-space-3);
+  padding: var(--wa-space-3) var(--wa-space-2);
 }
 
 .wa-input:focus-visible,
@@ -31,4 +32,3 @@
   color: var(--wa-color-danger);
   font-size: var(--wa-text-sm);
 }
-

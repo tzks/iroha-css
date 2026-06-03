@@ -1,15 +1,21 @@
 .wa-alert {
-  background: var(--wa-color-surface-muted);
-  border-inline-start: 0.25rem solid var(--wa-color-primary);
+  background:
+    linear-gradient(90deg, var(--wa-color-primary) 0 0.25rem, transparent 0.25rem),
+    var(--wa-color-surface-muted);
+  border: 1px solid var(--wa-color-border);
+  border-inline-start: 0;
   color: var(--wa-color-text);
-  padding: var(--wa-space-4);
+  padding: var(--wa-space-4) var(--wa-space-5);
 }
 
 .wa-alert--danger {
-  border-inline-start-color: var(--wa-color-danger);
+  background:
+    linear-gradient(90deg, var(--wa-color-danger) 0 0.25rem, transparent 0.25rem),
+    var(--wa-color-surface-muted);
 }
 
 .wa-alert--success {
-  border-inline-start-color: var(--wa-color-success);
+  background:
+    linear-gradient(90deg, var(--wa-color-success) 0 0.25rem, transparent 0.25rem),
+    var(--wa-color-surface-muted);
 }
-
