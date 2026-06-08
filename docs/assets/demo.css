@@ -106,6 +106,34 @@ body {
   min-block-size: 15rem;
 }
 
+.demo-component-wide {
+  grid-column: 1 / -1;
+}
+
+.demo-variant-row {
+  align-items: center;
+  border-block-end: 1px solid var(--wa-color-border);
+  display: grid;
+  gap: var(--wa-space-4);
+  grid-template-columns: minmax(8rem, 0.35fr) minmax(0, 1fr);
+  padding-block: var(--wa-space-4);
+}
+
+.demo-variant-row:last-child {
+  border-block-end: 0;
+}
+
+.demo-variant-label {
+  color: var(--wa-color-text-muted);
+  font-size: var(--wa-text-sm);
+}
+
+.demo-theme-strip {
+  display: grid;
+  gap: var(--wa-space-4);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+}
+
 .demo-chart-sample {
   align-items: center;
   display: flex;

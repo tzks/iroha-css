@@ -16,3 +16,21 @@
   content: "";
   inline-size: 0.45em;
 }
+
+.wa-badge--primary::before {
+  background: var(--wa-color-primary);
+}
+
+.wa-badge--danger::before {
+  background: var(--wa-color-danger);
+}
+
+.wa-badge--solid {
+  background: var(--wa-color-primary);
+  border-color: var(--wa-color-primary);
+  color: var(--wa-color-primary-contrast);
+}
+
+.wa-badge--solid::before {
+  background: currentcolor;
+}

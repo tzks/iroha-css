@@ -47,6 +47,11 @@
   --wa-button-bg: var(--wa-color-secondary);
 }
 
+.wa-button--accent {
+  --wa-button-bg: var(--wa-color-accent);
+  --wa-button-color: var(--wa-color-text);
+}
+
 .wa-button--ghost {
   --wa-button-bg: transparent;
   --wa-button-border: var(--wa-color-border);
@@ -57,6 +62,18 @@
 
 .wa-button--danger {
   --wa-button-bg: var(--wa-color-danger);
+}
+
+.wa-button--soft {
+  --wa-button-bg: var(--wa-color-surface-muted);
+  --wa-button-border: var(--wa-color-border);
+  --wa-button-color: var(--wa-color-text);
+}
+
+.wa-button--outline {
+  --wa-button-bg: transparent;
+  --wa-button-border: var(--wa-color-primary);
+  --wa-button-color: var(--wa-color-primary);
 }
 
 .wa-button--sm {
@@ -73,4 +90,10 @@
 
 .wa-button--block {
   inline-size: 100%;
+}
+
+.wa-button--seal {
+  border-radius: var(--wa-radius-sm);
+  font-family: var(--wa-font-serif);
+  letter-spacing: 0.08em;
 }

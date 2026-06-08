@@ -401,6 +401,11 @@ textarea {
   --wa-button-bg: var(--wa-color-secondary);
 }
 
+.wa-button--accent {
+  --wa-button-bg: var(--wa-color-accent);
+  --wa-button-color: var(--wa-color-text);
+}
+
 .wa-button--ghost {
   --wa-button-bg: transparent;
   --wa-button-border: var(--wa-color-border);
@@ -410,6 +415,18 @@ textarea {
 
 .wa-button--danger {
   --wa-button-bg: var(--wa-color-danger);
+}
+
+.wa-button--soft {
+  --wa-button-bg: var(--wa-color-surface-muted);
+  --wa-button-border: var(--wa-color-border);
+  --wa-button-color: var(--wa-color-text);
+}
+
+.wa-button--outline {
+  --wa-button-bg: transparent;
+  --wa-button-border: var(--wa-color-primary);
+  --wa-button-color: var(--wa-color-primary);
 }
 
 .wa-button--sm {
@@ -425,6 +442,12 @@ textarea {
 
 .wa-button--block {
   inline-size: 100%;
+}
+
+.wa-button--seal {
+  border-radius: var(--wa-radius-sm);
+  font-family: var(--wa-font-serif);
+  letter-spacing: 0.08em;
 }
 
 .wa-card {
@@ -463,6 +486,20 @@ textarea {
   --wa-card-shadow:
     0.45rem 0.45rem 0 var(--wa-color-surface-muted),
     0.45rem 0.45rem 0 1px var(--wa-color-border);
+}
+
+.wa-card--accent {
+  --wa-card-accent: var(--wa-color-primary);
+  --wa-card-border: 1px solid color-mix(in srgb, var(--wa-color-primary), var(--wa-color-border) 55%);
+}
+
+.wa-card--danger {
+  --wa-card-accent: var(--wa-color-danger);
+}
+
+.wa-card--washi {
+  background: radial-gradient(circle at 16% 18%, rgba(255, 255, 255, 0.28), transparent 22%), linear-gradient(135deg, var(--wa-color-paper-fiber) 0 25%, transparent 25% 50%, var(--wa-color-paper-fiber) 50% 75%, transparent 75%), var(--wa-color-surface-muted);
+  background-size: auto, 1.1rem 1.1rem, auto;
 }
 
 .wa-hero {
@@ -540,6 +577,17 @@ textarea {
   font-size: var(--wa-text-sm);
 }
 
+.wa-field--invalid .wa-input,
+.wa-field--invalid .wa-select,
+.wa-field--invalid .wa-textarea {
+  border-block-end-color: var(--wa-color-danger);
+}
+
+.wa-field__hint {
+  color: var(--wa-color-text-muted);
+  font-size: var(--wa-text-sm);
+}
+
 .wa-badge {
   align-items: center;
   background: var(--wa-color-surface-muted);
@@ -559,6 +607,24 @@ textarea {
   inline-size: 0.45em;
 }
 
+.wa-badge--primary::before {
+  background: var(--wa-color-primary);
+}
+
+.wa-badge--danger::before {
+  background: var(--wa-color-danger);
+}
+
+.wa-badge--solid {
+  background: var(--wa-color-primary);
+  border-color: var(--wa-color-primary);
+  color: var(--wa-color-primary-contrast);
+}
+
+.wa-badge--solid::before {
+  background: currentcolor;
+}
+
 .wa-alert {
   background: linear-gradient(90deg, var(--wa-color-primary) 0 0.25rem, transparent 0.25rem), var(--wa-color-surface-muted);
   border: 1px solid var(--wa-color-border);
@@ -573,6 +639,14 @@ textarea {
 
 .wa-alert--success {
   background: linear-gradient(90deg, var(--wa-color-success) 0 0.25rem, transparent 0.25rem), var(--wa-color-surface-muted);
+}
+
+.wa-alert--accent {
+  background: linear-gradient(90deg, var(--wa-color-accent) 0 0.25rem, transparent 0.25rem), var(--wa-color-surface-muted);
+}
+
+.wa-alert--subtle {
+  background: linear-gradient(90deg, var(--wa-color-border) 0 0.25rem, transparent 0.25rem), var(--wa-color-surface);
 }
 
 .wa-article {
@@ -618,6 +692,15 @@ textarea {
   background-size: 1rem 100%;
   color: var(--wa-color-text);
   font-size: var(--wa-text-sm);
+}
+
+.wa-table--striped tbody tr:nth-child(even) {
+  background: var(--wa-color-surface-muted);
+}
+
+.wa-table--compact th,
+.wa-table--compact td {
+  padding: var(--wa-space-2) var(--wa-space-3);
 }
 
 .wa-table tr:last-child td {
@@ -841,6 +924,14 @@ textarea {
   background: var(--wa-color-accent);
 }
 
+.wa-progress--danger .wa-progress__bar {
+  background: var(--wa-color-danger);
+}
+
+.wa-progress--lg {
+  --wa-progress-size: 0.85rem;
+}
+
 .wa-donut {
   --wa-donut-size: 8rem;
   --wa-donut-thickness: 1rem;
@@ -877,6 +968,15 @@ textarea {
 
 .wa-donut--accent {
   background: conic-gradient(var(--wa-color-accent) 0 var(--wa-donut-value), var(--wa-donut-rest) var(--wa-donut-value) 100%);
+}
+
+.wa-donut--danger {
+  background: conic-gradient(var(--wa-color-danger) 0 var(--wa-donut-value), var(--wa-donut-rest) var(--wa-donut-value) 100%);
+}
+
+.wa-donut--sm {
+  --wa-donut-size: 5rem;
+  --wa-donut-thickness: 0.7rem;
 }
 
 .wa-bar-chart {
@@ -1059,6 +1159,14 @@ textarea {
   margin-block-start: 0.1rem;
 }
 
+.wa-toast--success::before {
+  background: var(--wa-color-success);
+}
+
+.wa-toast--danger::before {
+  background: var(--wa-color-danger);
+}
+
 .wa-accordion {
   border-block: 1px solid var(--wa-color-border);
 }
@@ -1139,6 +1247,18 @@ textarea {
 .wa-chip--primary {
   background: var(--wa-color-primary);
   border-color: var(--wa-color-primary);
+  color: var(--wa-color-primary-contrast);
+}
+
+.wa-chip--accent {
+  background: var(--wa-color-accent);
+  border-color: var(--wa-color-accent);
+  color: var(--wa-color-text);
+}
+
+.wa-chip--danger {
+  background: var(--wa-color-danger);
+  border-color: var(--wa-color-danger);
   color: var(--wa-color-primary-contrast);
 }
 

@@ -35,3 +35,20 @@
     0.45rem 0.45rem 0 var(--wa-color-surface-muted),
     0.45rem 0.45rem 0 1px var(--wa-color-border);
 }
+
+.wa-card--accent {
+  --wa-card-accent: var(--wa-color-primary);
+  --wa-card-border: 1px solid color-mix(in srgb, var(--wa-color-primary), var(--wa-color-border) 55%);
+}
+
+.wa-card--danger {
+  --wa-card-accent: var(--wa-color-danger);
+}
+
+.wa-card--washi {
+  background:
+    radial-gradient(circle at 16% 18%, rgb(255 255 255 / 28%), transparent 22%),
+    linear-gradient(135deg, var(--wa-color-paper-fiber) 0 25%, transparent 25% 50%, var(--wa-color-paper-fiber) 50% 75%, transparent 75%),
+    var(--wa-color-surface-muted);
+  background-size: auto, 1.1rem 1.1rem, auto;
+}

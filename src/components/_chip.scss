@@ -16,3 +16,14 @@
   color: var(--wa-color-primary-contrast);
 }
 
+.wa-chip--accent {
+  background: var(--wa-color-accent);
+  border-color: var(--wa-color-accent);
+  color: var(--wa-color-text);
+}
+
+.wa-chip--danger {
+  background: var(--wa-color-danger);
+  border-color: var(--wa-color-danger);
+  color: var(--wa-color-primary-contrast);
+}

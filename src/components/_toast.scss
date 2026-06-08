@@ -19,3 +19,11 @@
   flex: 0 0 1.4rem;
   margin-block-start: 0.1rem;
 }
+
+.wa-toast--success::before {
+  background: var(--wa-color-success);
+}
+
+.wa-toast--danger::before {
+  background: var(--wa-color-danger);
+}

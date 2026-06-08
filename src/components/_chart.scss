@@ -43,6 +43,18 @@
   );
 }
 
+.wa-donut--danger {
+  background: conic-gradient(
+    var(--wa-color-danger) 0 var(--wa-donut-value),
+    var(--wa-donut-rest) var(--wa-donut-value) 100%
+  );
+}
+
+.wa-donut--sm {
+  --wa-donut-size: 5rem;
+  --wa-donut-thickness: 0.7rem;
+}
+
 .wa-bar-chart {
   align-items: end;
   block-size: var(--wa-chart-height, 10rem);

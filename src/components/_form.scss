@@ -32,3 +32,14 @@
   color: var(--wa-color-danger);
   font-size: var(--wa-text-sm);
 }
+
+.wa-field--invalid .wa-input,
+.wa-field--invalid .wa-select,
+.wa-field--invalid .wa-textarea {
+  border-block-end-color: var(--wa-color-danger);
+}
+
+.wa-field__hint {
+  color: var(--wa-color-text-muted);
+  font-size: var(--wa-text-sm);
+}

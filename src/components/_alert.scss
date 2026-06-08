@@ -19,3 +19,15 @@
     linear-gradient(90deg, var(--wa-color-success) 0 0.25rem, transparent 0.25rem),
     var(--wa-color-surface-muted);
 }
+
+.wa-alert--accent {
+  background:
+    linear-gradient(90deg, var(--wa-color-accent) 0 0.25rem, transparent 0.25rem),
+    var(--wa-color-surface-muted);
+}
+
+.wa-alert--subtle {
+  background:
+    linear-gradient(90deg, var(--wa-color-border) 0 0.25rem, transparent 0.25rem),
+    var(--wa-color-surface);
+}

@@ -24,3 +24,11 @@
 .wa-progress--accent .wa-progress__bar {
   background: var(--wa-color-accent);
 }
+
+.wa-progress--danger .wa-progress__bar {
+  background: var(--wa-color-danger);
+}
+
+.wa-progress--lg {
+  --wa-progress-size: 0.85rem;
+}
