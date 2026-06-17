@@ -66,7 +66,7 @@ View the live demo on GitHub Pages: [https://tzks.github.io/iroha-css/](https://
 
 The demo includes a theme color comparison, expanded component gallery with charts and feedback surfaces, layout pattern gallery, and full-page examples.
 
-Library controls include `data-wa-theme`, `data-wa-density`, and `data-wa-contrast`, plus a small reference-oriented utility set.
+Library controls include `data-wa-theme`, `data-wa-density`, and `data-wa-contrast`, plus a small reference-oriented utility set. The component catalog documents variants, state classes, and implementation notes for practical adoption.
 
 ## Accessibility
 

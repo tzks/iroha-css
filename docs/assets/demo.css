@@ -134,6 +134,17 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
 }
 
+.demo-catalog-rail {
+  display: grid;
+  gap: var(--wa-space-3);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr));
+}
+
+.demo-catalog-stat {
+  border-block-start: 2px solid var(--wa-color-primary);
+  padding-block-start: var(--wa-space-3);
+}
+
 .demo-reference-table code {
   color: var(--wa-color-primary);
   font-size: var(--wa-text-sm);
@@ -146,6 +157,17 @@ body {
   display: block;
   overflow-x: auto;
   padding: var(--wa-space-4);
+}
+
+.demo-api-section {
+  scroll-margin-block-start: var(--wa-space-8);
+}
+
+.demo-api-nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wa-space-2);
 }
 
 .demo-chart-sample {
