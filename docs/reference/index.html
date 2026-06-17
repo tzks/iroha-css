@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-wa-theme="ai">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reference - iroha-css Demo</title>
+    <link rel="stylesheet" href="../dist/iroha.css" />
+    <link rel="stylesheet" href="../assets/demo.css" />
+  </head>
+  <body>
+    <header class="wa-container wa-nav demo-example-nav">
+      <a class="demo-mark" href="../">iroha-css</a>
+      <nav class="wa-cluster" aria-label="Demo navigation">
+        <a href="../themes/">Themes</a>
+        <a href="../components/">Components</a>
+        <a href="../layouts/">Layouts</a>
+      </nav>
+    </header>
+    <main class="wa-section">
+      <div class="wa-container wa-stack wa-space-6">
+        <div class="wa-flow">
+          <h1 class="wa-hero__title">CSS API reference</h1>
+          <p class="wa-text-muted">iroha-css is strongest when AI and humans can rely on stable semantic classes, role tokens, and page-level controls.</p>
+        </div>
+
+        <section class="wa-card wa-card--washi wa-flow">
+          <h2>Install and import</h2>
+          <pre class="demo-code"><code>npm install iroha-css
+
+@use "iroha-css";
+
+&lt;link rel="stylesheet" href="./dist/iroha.css" /&gt;</code></pre>
+        </section>
+
+        <section class="wa-grid">
+          <article class="wa-card wa-flow">
+            <h2>Page controls</h2>
+            <pre class="demo-code"><code>&lt;main data-wa-theme="sakura"
+      data-wa-density="spacious"
+      data-wa-contrast="high"&gt;</code></pre>
+            <div class="wa-stack" data-wa-density="compact">
+              <button class="wa-button">Compact button</button>
+              <div class="wa-card">Compact card padding</div>
+            </div>
+          </article>
+
+          <article class="wa-card wa-flow" data-wa-density="spacious" data-wa-contrast="high">
+            <h2>High contrast spacious</h2>
+            <p class="wa-text-muted">The same components react to density and contrast tokens.</p>
+            <button class="wa-button wa-button--seal">和 button</button>
+          </article>
+        </section>
+
+        <section class="wa-card wa-flow">
+          <h2>Class groups</h2>
+          <div class="wa-table-wrap">
+            <table class="wa-table wa-table--compact wa-table--striped demo-reference-table">
+              <thead>
+                <tr><th>Group</th><th>Classes</th><th>Purpose</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Layout</td><td><code>wa-container wa-section wa-stack wa-grid wa-split wa-sidebar wa-reel wa-masonry</code></td><td>Compositional layout without custom CSS.</td></tr>
+                <tr><td>Components</td><td><code>wa-button wa-card wa-tabs wa-table wa-donut wa-progress wa-modal wa-toast</code></td><td>CSS-only UI surfaces that inherit theme roles.</td></tr>
+                <tr><td>Japanese helpers</td><td><code>wa-washi wa-kamon wa-seal wa-kasane wa-vertical</code></td><td>Paper, seal, crest, layering, and vertical rhythm.</td></tr>
+                <tr><td>Utilities</td><td><code>wa-text-muted wa-surface-muted wa-rule-start wa-gap-4 wa-hide-sm</code></td><td>Small helpers kept intentionally limited.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="wa-card wa-flow">
+          <h2>Core semantic tokens</h2>
+          <div class="wa-grid" style="--wa-grid-min: 13rem">
+            <div class="wa-callout"><code>--wa-color-bg</code></div>
+            <div class="wa-callout"><code>--wa-color-surface</code></div>
+            <div class="wa-callout"><code>--wa-color-primary</code></div>
+            <div class="wa-callout"><code>--wa-color-accent</code></div>
+            <div class="wa-callout"><code>--wa-card-padding</code></div>
+            <div class="wa-callout"><code>--wa-button-radius</code></div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
+

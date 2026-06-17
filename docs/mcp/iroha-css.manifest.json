@@ -8,8 +8,9 @@
     "minifiedCss": "dist/iroha.min.css",
     "scss": "src/index.scss"
   },
-  "rules": [
+    "rules": [
     "Use semantic wa-* classes.",
+    "Use data-wa-density and data-wa-contrast for page-level tuning.",
     "Do not invent new color variables.",
     "Do not use raw hex colors unless extending tokens.",
     "Use role-based design tokens.",
@@ -17,4 +18,3 @@
     "Prefer asymmetry, quiet spacing, restrained color, and editorial rhythm."
   ]
 }
-

@@ -1,0 +1,17 @@
+@media (width < 48rem) {
+  .wa-hide-sm {
+    display: none !important;
+  }
+
+  .wa-stack-sm {
+    display: grid !important;
+    gap: var(--wa-space-4);
+  }
+}
+
+@media (width >= 48rem) {
+  .wa-hide-md {
+    display: none !important;
+  }
+}
+

@@ -56,6 +56,8 @@ GitHub Pages のデモはこちらです: [https://tzks.github.io/iroha-css/](ht
 
 デモでは、テーマ別の配色比較、グラフやフィードバックUIを含むコンポーネント一覧、レイアウトパターン一覧、ページ例を確認できます。
 
+ライブラリとして、`data-wa-theme`、`data-wa-density`、`data-wa-contrast` によるページ単位の調整と、必要最小限の utility class を提供します。
+
 ## ライセンス
 
 MIT

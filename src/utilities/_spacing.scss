@@ -18,3 +18,26 @@
   gap: var(--wa-space-6);
 }
 
+.wa-gap-2 {
+  gap: var(--wa-space-2);
+}
+
+.wa-gap-4 {
+  gap: var(--wa-space-4);
+}
+
+.wa-gap-6 {
+  gap: var(--wa-space-6);
+}
+
+.wa-p-6 {
+  padding: var(--wa-space-6);
+}
+
+.wa-px-4 {
+  padding-inline: var(--wa-space-4);
+}
+
+.wa-py-4 {
+  padding-block: var(--wa-space-4);
+}

@@ -1,0 +1,32 @@
+[data-wa-density="compact"] {
+  --wa-space-section: clamp(2rem, 5vw, 4rem);
+  --wa-button-padding-x: var(--wa-space-4);
+  --wa-button-padding-y: var(--wa-space-2);
+  --wa-card-padding: var(--wa-space-4);
+  --wa-hero-padding-block: clamp(3rem, 8vw, 6rem);
+}
+
+[data-wa-density="spacious"] {
+  --wa-space-section: clamp(4rem, 10vw, 9rem);
+  --wa-button-padding-x: var(--wa-space-6);
+  --wa-button-padding-y: var(--wa-space-4);
+  --wa-card-padding: var(--wa-space-6);
+  --wa-hero-padding-block: clamp(5rem, 14vw, 11rem);
+}
+
+[data-wa-contrast="high"] {
+  --wa-color-text: #161311;
+  --wa-color-text-muted: #4d4842;
+  --wa-color-border: #7f756b;
+  --wa-color-rule: rgb(35 32 31 / 26%);
+  --wa-focus-ring: 0 0 0 3px rgb(159 45 53 / 38%);
+}
+
+[data-wa-contrast="high"][data-wa-theme="sumi"],
+[data-wa-theme="sumi"] [data-wa-contrast="high"] {
+  --wa-color-text: #fffaf0;
+  --wa-color-text-muted: #e4d8c8;
+  --wa-color-border: #827568;
+  --wa-color-rule: rgb(245 240 232 / 28%);
+}
+

@@ -6,3 +6,18 @@
   text-wrap: balance;
 }
 
+.wa-text-serif {
+  font-family: var(--wa-font-serif);
+}
+
+.wa-text-sm {
+  font-size: var(--wa-text-sm);
+}
+
+.wa-text-lg {
+  font-size: var(--wa-text-lg);
+}
+
+.wa-leading-relaxed {
+  line-height: var(--wa-leading-relaxed);
+}
