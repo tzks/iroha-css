@@ -3,18 +3,50 @@
   "purpose": "Generate human-feeling web layouts using semantic wa-* classes and Japanese-inspired design tokens.",
   "classPrefix": "wa-",
   "themeAttribute": "data-wa-theme",
+  "densityAttribute": "data-wa-density",
+  "contrastAttribute": "data-wa-contrast",
+  "themes": ["sakura", "sumi", "ai", "matcha", "kurenai", "yamabuki"],
   "entrypoints": {
     "css": "dist/iroha.css",
     "minifiedCss": "dist/iroha.min.css",
     "scss": "src/index.scss"
   },
-    "rules": [
+  "aiDocs": {
+    "codex": "docs/ai/codex.md",
+    "cursor": "docs/ai/cursor.md",
+    "claudeCode": "docs/ai/claude-code.md",
+    "decisionTree": "docs/ai/class-decision-tree.md",
+    "snippets": "docs/ai/component-snippets.md",
+    "accessibility": "docs/ai/accessibility.md",
+    "antiAiLayout": "docs/ai/anti-ai-layout.md",
+    "stability": "docs/ai/stability-policy.md"
+  },
+  "machineReadable": {
+    "classes": "docs/mcp/classes.manifest.json",
+    "componentCatalog": "docs/mcp/components.catalog.json",
+    "componentSchema": "docs/mcp/components.schema.json",
+    "tokenCatalog": "docs/mcp/tokens.catalog.json",
+    "tokenSchema": "docs/mcp/tokens.schema.json",
+    "prompts": "docs/mcp/prompts.json"
+  },
+  "recommendedOrder": [
+    "Choose data-wa-theme.",
+    "Choose page-level density or contrast if needed.",
+    "Choose a layout primitive.",
+    "Add semantic components.",
+    "Use utilities only for small adjustments.",
+    "Add app-specific classes outside the wa- namespace only when necessary."
+  ],
+  "rules": [
     "Use semantic wa-* classes.",
     "Use data-wa-density and data-wa-contrast for page-level tuning.",
+    "Read classes.manifest.json before selecting classes.",
+    "Do not invent wa-* classes.",
     "Do not invent new color variables.",
     "Do not use raw hex colors unless extending tokens.",
     "Use role-based design tokens.",
     "Avoid generic AI-looking SaaS layouts.",
-    "Prefer asymmetry, quiet spacing, restrained color, and editorial rhythm."
+    "Prefer asymmetry, quiet spacing, restrained color, and editorial rhythm.",
+    "Use app JavaScript for tabs, modals, dropdowns, and toast behavior."
   ]
 }

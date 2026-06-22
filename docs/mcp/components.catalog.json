@@ -1,0 +1,184 @@
+{
+  "components": [
+    {
+      "name": "stack",
+      "class": "wa-stack",
+      "category": "layout",
+      "useWhen": "Vertical rhythm for forms, article blocks, settings panels, and repeated content.",
+      "avoidWhen": "Items should align in rows or have equal card-like weight."
+    },
+    {
+      "name": "grid",
+      "class": "wa-grid",
+      "category": "layout",
+      "useWhen": "Equal-weight repeated items, catalogs, metrics, and cards.",
+      "avoidWhen": "The layout needs a clear main/support relationship."
+    },
+    {
+      "name": "sidebar",
+      "class": "wa-sidebar",
+      "category": "layout",
+      "useWhen": "Filters, navigation, metadata, or settings beside a main task.",
+      "avoidWhen": "Both columns have equal importance; use wa-split instead."
+    },
+    {
+      "name": "editorial",
+      "class": "wa-editorial",
+      "category": "layout",
+      "useWhen": "Asymmetric magazine-like rhythm for hero, article intro, or narrative pages.",
+      "avoidWhen": "Dense operational screens that need predictable scanning."
+    },
+    {
+      "name": "button",
+      "class": "wa-button",
+      "category": "content",
+      "variants": [
+        "wa-button--secondary",
+        "wa-button--accent",
+        "wa-button--ghost",
+        "wa-button--soft",
+        "wa-button--outline",
+        "wa-button--danger",
+        "wa-button--sm",
+        "wa-button--lg",
+        "wa-button--block",
+        "wa-button--seal"
+      ],
+      "tokens": [
+        "--wa-button-bg",
+        "--wa-button-color",
+        "--wa-button-border",
+        "--wa-button-radius",
+        "--wa-button-padding-x",
+        "--wa-button-padding-y"
+      ],
+      "useWhen": "Clickable command or link action.",
+      "avoidWhen": "The element is navigation-only text; use normal links inside nav/list."
+    },
+    {
+      "name": "card",
+      "class": "wa-card",
+      "category": "surface",
+      "variants": [
+        "wa-card--quiet",
+        "wa-card--bordered",
+        "wa-card--elevated",
+        "wa-card--accent",
+        "wa-card--danger",
+        "wa-card--washi"
+      ],
+      "tokens": [
+        "--wa-card-bg",
+        "--wa-card-color",
+        "--wa-card-border",
+        "--wa-card-radius",
+        "--wa-card-shadow",
+        "--wa-card-padding"
+      ],
+      "useWhen": "A bounded idea needs its own surface.",
+      "avoidWhen": "Wrapping entire page sections or nesting multiple cards."
+    },
+    {
+      "name": "form",
+      "class": "wa-form",
+      "category": "form",
+      "elements": [
+        "wa-field",
+        "wa-field__hint",
+        "wa-input",
+        "wa-select",
+        "wa-textarea",
+        "wa-error"
+      ],
+      "variants": ["wa-field--invalid"],
+      "tokens": [
+        "--wa-input-bg",
+        "--wa-input-color",
+        "--wa-input-border",
+        "--wa-input-radius",
+        "--wa-input-focus-ring"
+      ],
+      "accessibility": [
+        "Use real labels.",
+        "Use aria-invalid with wa-field--invalid.",
+        "Provide visible wa-error text."
+      ],
+      "useWhen": "Stacking labeled inputs and actions.",
+      "avoidWhen": "Controls are only filters beside a data table; consider wa-sidebar plus compact density."
+    },
+    {
+      "name": "table",
+      "class": "wa-table",
+      "category": "data",
+      "elements": ["wa-table-wrap"],
+      "variants": ["wa-table--striped", "wa-table--compact"],
+      "accessibility": ["Use th for headers.", "Wrap in wa-table-wrap for horizontal overflow."],
+      "useWhen": "Dense comparable records.",
+      "avoidWhen": "Data is a small set of KPIs; use wa-stat or chart display."
+    },
+    {
+      "name": "donut",
+      "class": "wa-donut",
+      "category": "data",
+      "elements": ["wa-donut__value"],
+      "variants": ["wa-donut--accent", "wa-donut--danger", "wa-donut--sm"],
+      "tokens": ["--wa-donut-value", "--wa-donut-size", "--wa-donut-thickness"],
+      "accessibility": ["Add visible value text or aria-label."],
+      "useWhen": "Simple percentage display.",
+      "avoidWhen": "Users need interactive chart analysis."
+    },
+    {
+      "name": "progress",
+      "class": "wa-progress",
+      "category": "data",
+      "elements": ["wa-progress__bar"],
+      "variants": ["wa-progress--accent", "wa-progress--danger", "wa-progress--lg"],
+      "tokens": ["--wa-progress-value", "--wa-progress-size"],
+      "accessibility": ["Pair with a text value or aria-label."],
+      "useWhen": "Linear completion or capacity value.",
+      "avoidWhen": "Multiple comparable categories need labels; use table or bar chart."
+    },
+    {
+      "name": "meter",
+      "class": "wa-meter",
+      "category": "data",
+      "elements": ["wa-meter__track", "wa-meter__marker"],
+      "tokens": ["--wa-meter-value"],
+      "accessibility": ["Pair with a score label or aria-label."],
+      "useWhen": "Risk, health, quality, or score indicator.",
+      "avoidWhen": "Value has no meaningful low-to-high scale."
+    },
+    {
+      "name": "tabs",
+      "class": "wa-tabs",
+      "category": "interactive",
+      "elements": ["wa-tabs__list", "wa-tabs__tab", "wa-tabs__panel"],
+      "requiresBehavior": true,
+      "accessibility": [
+        "Application code must manage aria-selected, keyboard focus, and panel visibility."
+      ],
+      "useWhen": "Switching between related panels.",
+      "avoidWhen": "All content should be visible for scanning."
+    },
+    {
+      "name": "modal",
+      "class": "wa-modal",
+      "category": "interactive",
+      "elements": ["wa-modal-backdrop"],
+      "requiresBehavior": true,
+      "accessibility": [
+        "Application code must provide role, aria-modal, focus trap, Escape close, inert background, and restore focus."
+      ],
+      "useWhen": "Blocking confirmation or focused task.",
+      "avoidWhen": "A normal page section or inline alert is enough."
+    },
+    {
+      "name": "japanese-helpers",
+      "class": "wa-washi",
+      "category": "japanese",
+      "variants": ["wa-washi", "wa-kasane", "wa-seal", "wa-kamon", "wa-vertical"],
+      "useWhen": "Adding meaningful paper, seal, crest, layered, or vertical Japanese tone.",
+      "avoidWhen": "Decorating every component without hierarchy."
+    }
+  ]
+}

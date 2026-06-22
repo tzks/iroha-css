@@ -1,0 +1,89 @@
+{
+  "themes": ["sakura", "sumi", "ai", "matcha", "kurenai", "yamabuki"],
+  "attributes": {
+    "theme": {
+      "name": "data-wa-theme",
+      "values": ["sakura", "sumi", "ai", "matcha", "kurenai", "yamabuki"],
+      "use": "Set the Japanese-inspired color mood on a parent element."
+    },
+    "density": {
+      "name": "data-wa-density",
+      "values": ["compact", "spacious"],
+      "use": "Tune component padding and page rhythm without custom CSS."
+    },
+    "contrast": {
+      "name": "data-wa-contrast",
+      "values": ["high"],
+      "use": "Increase border and text contrast for dense or accessibility-sensitive UI."
+    }
+  },
+  "semantic": [
+    "--wa-color-bg",
+    "--wa-color-surface",
+    "--wa-color-surface-muted",
+    "--wa-color-text",
+    "--wa-color-text-muted",
+    "--wa-color-primary",
+    "--wa-color-primary-contrast",
+    "--wa-color-secondary",
+    "--wa-color-accent",
+    "--wa-color-border",
+    "--wa-color-rule",
+    "--wa-color-danger",
+    "--wa-color-warning",
+    "--wa-color-success",
+    "--wa-color-paper-fiber"
+  ],
+  "scale": [
+    "--wa-space-1",
+    "--wa-space-2",
+    "--wa-space-3",
+    "--wa-space-4",
+    "--wa-space-5",
+    "--wa-space-6",
+    "--wa-space-7",
+    "--wa-space-8",
+    "--wa-text-sm",
+    "--wa-text-base",
+    "--wa-text-lg",
+    "--wa-text-xl",
+    "--wa-text-2xl",
+    "--wa-radius-sm",
+    "--wa-radius-md",
+    "--wa-radius-lg",
+    "--wa-radius-pill"
+  ],
+  "component": [
+    "--wa-card-bg",
+    "--wa-card-color",
+    "--wa-card-border",
+    "--wa-card-radius",
+    "--wa-card-shadow",
+    "--wa-card-padding",
+    "--wa-card-accent",
+    "--wa-button-bg",
+    "--wa-button-color",
+    "--wa-button-border",
+    "--wa-button-radius",
+    "--wa-button-padding-x",
+    "--wa-button-padding-y",
+    "--wa-input-bg",
+    "--wa-input-color",
+    "--wa-input-border",
+    "--wa-input-radius",
+    "--wa-input-focus-ring",
+    "--wa-donut-value",
+    "--wa-donut-size",
+    "--wa-donut-thickness",
+    "--wa-progress-value",
+    "--wa-progress-size",
+    "--wa-meter-value"
+  ],
+  "rules": [
+    "Use semantic tokens for app-level theme overrides.",
+    "Use component tokens for local component tuning.",
+    "Do not write raw hex colors in generated components.",
+    "Do not create new --wa-* tokens without extending the design system source.",
+    "Use app-specific custom properties outside the --wa- namespace when a project needs private values."
+  ]
+}

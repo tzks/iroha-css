@@ -2,8 +2,30 @@
   "prompts": [
     {
       "name": "human-feeling-landing",
-      "text": "Create a landing page with iroha-css, semantic wa-* classes, restrained color, asymmetry, and no generic centered gradient hero."
+      "text": "Create a landing page with iroha-css. Use semantic wa-* classes, data-wa-theme=\"ai\", restrained color, asymmetry, wa-editorial or wa-split for the first viewport, and no generic centered gradient hero."
+    },
+    {
+      "name": "settings-form",
+      "text": "Create a settings form with iroha-css. Use wa-form, wa-field, wa-input, visible labels, wa-field--invalid with aria-invalid and wa-error, and wa-cluster for actions. Do not invent class names."
+    },
+    {
+      "name": "operations-dashboard",
+      "text": "Create a compact operations dashboard with iroha-css. Use data-wa-theme=\"sumi\" data-wa-density=\"compact\" data-wa-contrast=\"high\", wa-sidebar, wa-grid, wa-table, wa-stat, wa-donut, wa-progress, and wa-meter. Keep chart values accessible."
+    },
+    {
+      "name": "component-catalog",
+      "text": "Create a component catalog with iroha-css. Use wa-grid for samples, theme comparison via data-wa-theme on sample cards, copyable HTML snippets, and accessibility notes for CSS-only interactive surfaces."
+    },
+    {
+      "name": "repair-generic-ai-layout",
+      "text": "Refactor this UI to use iroha-css. Replace invented classes with documented wa-* classes, remove raw colors, reduce nested cards, and choose layout primitives from wa-stack, wa-grid, wa-split, wa-sidebar, wa-editorial, and wa-reel."
     }
+  ],
+  "globalRules": [
+    "Use docs/mcp/classes.manifest.json before selecting classes.",
+    "Use docs/ai/class-decision-tree.md before adding custom CSS.",
+    "Do not invent wa-* classes.",
+    "Use data-wa-theme, data-wa-density, and data-wa-contrast for parent-level tuning.",
+    "Keep behavior for tabs, modals, dropdowns, and toasts in application code."
   ]
 }
-

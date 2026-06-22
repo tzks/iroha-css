@@ -3,10 +3,27 @@
   "title": "iroha-css tokens",
   "type": "object",
   "properties": {
-    "primitive": { "type": "array", "items": { "type": "string" } },
-    "semantic": { "type": "array", "items": { "type": "string" } },
-    "component": { "type": "array", "items": { "type": "string" } }
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["sakura", "sumi", "ai", "matcha", "kurenai", "yamabuki"]
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "properties": {
+        "theme": { "const": "data-wa-theme" },
+        "density": { "const": "data-wa-density" },
+        "contrast": { "const": "data-wa-contrast" }
+      },
+      "required": ["theme", "density", "contrast"]
+    },
+    "primitive": { "type": "array", "items": { "type": "string", "pattern": "^--wa-" } },
+    "semantic": { "type": "array", "items": { "type": "string", "pattern": "^--wa-" } },
+    "component": { "type": "array", "items": { "type": "string", "pattern": "^--wa-" } },
+    "state": { "type": "array", "items": { "type": "string", "pattern": "^--wa-" } },
+    "rules": { "type": "array", "items": { "type": "string" } }
   },
-  "required": ["primitive", "semantic", "component"]
+  "required": ["themes", "attributes", "primitive", "semantic", "component", "rules"]
 }
-

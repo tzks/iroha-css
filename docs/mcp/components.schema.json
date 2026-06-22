@@ -3,9 +3,42 @@
   "title": "iroha-css components",
   "type": "object",
   "properties": {
+    "name": { "type": "string" },
     "class": { "type": "string", "pattern": "^wa-" },
-    "variants": { "type": "array", "items": { "type": "string" } }
+    "category": {
+      "type": "string",
+      "enum": [
+        "layout",
+        "surface",
+        "form",
+        "navigation",
+        "feedback",
+        "data",
+        "content",
+        "interactive",
+        "japanese",
+        "utility"
+      ]
+    },
+    "variants": { "type": "array", "items": { "type": "string", "pattern": "^wa-" } },
+    "elements": { "type": "array", "items": { "type": "string", "pattern": "^wa-" } },
+    "tokens": { "type": "array", "items": { "type": "string", "pattern": "^--wa-" } },
+    "attributes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "values": { "type": "array", "items": { "type": "string" } }
+        },
+        "required": ["name"]
+      }
+    },
+    "requiresBehavior": { "type": "boolean" },
+    "accessibility": { "type": "array", "items": { "type": "string" } },
+    "useWhen": { "type": "string" },
+    "avoidWhen": { "type": "string" },
+    "snippet": { "type": "string" }
   },
-  "required": ["class"]
+  "required": ["name", "class", "category"]
 }
-

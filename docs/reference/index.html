@@ -20,7 +20,10 @@
       <div class="wa-container wa-stack wa-space-6">
         <div class="wa-flow">
           <h1 class="wa-hero__title">CSS API reference</h1>
-          <p class="wa-text-muted">iroha-css is strongest when AI and humans can rely on stable semantic classes, role tokens, and page-level controls.</p>
+          <p class="wa-text-muted">
+            iroha-css is strongest when AI and humans can rely on stable semantic classes, role
+            tokens, and page-level controls.
+          </p>
         </div>
 
         <section class="wa-card wa-card--washi wa-flow">
@@ -41,6 +44,7 @@
           <a class="wa-chip" href="#feedback">Feedback</a>
           <a class="wa-chip" href="#charts">Charts</a>
           <a class="wa-chip" href="#overlay">Overlay</a>
+          <a class="wa-chip" href="#ai-contract">AI contract</a>
         </nav>
 
         <section class="wa-grid">
@@ -67,16 +71,99 @@
           <div class="wa-table-wrap">
             <table class="wa-table wa-table--compact wa-table--striped demo-reference-table">
               <thead>
-                <tr><th>Group</th><th>Classes</th><th>Purpose</th></tr>
+                <tr>
+                  <th>Group</th>
+                  <th>Classes</th>
+                  <th>Purpose</th>
+                </tr>
               </thead>
               <tbody>
-                <tr><td>Layout</td><td><code>wa-container wa-section wa-stack wa-grid wa-split wa-sidebar wa-reel wa-masonry</code></td><td>Compositional layout without custom CSS.</td></tr>
-                <tr><td>Components</td><td><code>wa-button wa-card wa-tabs wa-table wa-donut wa-progress wa-modal wa-toast</code></td><td>CSS-only UI surfaces that inherit theme roles.</td></tr>
-                <tr><td>Japanese helpers</td><td><code>wa-washi wa-kamon wa-seal wa-kasane wa-vertical</code></td><td>Paper, seal, crest, layering, and vertical rhythm.</td></tr>
-                <tr><td>Utilities</td><td><code>wa-text-muted wa-surface-muted wa-rule-start wa-gap-4 wa-hide-sm</code></td><td>Small helpers kept intentionally limited.</td></tr>
+                <tr>
+                  <td>Layout</td>
+                  <td>
+                    <code
+                      >wa-container wa-section wa-stack wa-grid wa-split wa-sidebar wa-reel
+                      wa-masonry</code
+                    >
+                  </td>
+                  <td>Compositional layout without custom CSS.</td>
+                </tr>
+                <tr>
+                  <td>Components</td>
+                  <td>
+                    <code
+                      >wa-button wa-card wa-tabs wa-table wa-donut wa-progress wa-modal
+                      wa-toast</code
+                    >
+                  </td>
+                  <td>CSS-only UI surfaces that inherit theme roles.</td>
+                </tr>
+                <tr>
+                  <td>Japanese helpers</td>
+                  <td><code>wa-washi wa-kamon wa-seal wa-kasane wa-vertical</code></td>
+                  <td>Paper, seal, crest, layering, and vertical rhythm.</td>
+                </tr>
+                <tr>
+                  <td>Utilities</td>
+                  <td>
+                    <code>wa-text-muted wa-surface-muted wa-rule-start wa-gap-4 wa-hide-sm</code>
+                  </td>
+                  <td>Small helpers kept intentionally limited.</td>
+                </tr>
               </tbody>
             </table>
           </div>
+        </section>
+
+        <section id="ai-contract" class="wa-card wa-card--washi wa-flow demo-api-section">
+          <h2>AI usage contract</h2>
+          <p class="wa-text-muted">
+            For Codex, Cursor, Claude Code, and MCP-style tools, read the class manifest before
+            generating UI and use the decision tree before writing custom CSS.
+          </p>
+          <div class="wa-table-wrap">
+            <table class="wa-table wa-table--compact">
+              <thead>
+                <tr>
+                  <th>Need</th>
+                  <th>Use</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Allowed classes</td>
+                  <td><a href="../mcp/classes.manifest.json">docs/mcp/classes.manifest.json</a></td>
+                </tr>
+                <tr>
+                  <td>Component metadata</td>
+                  <td>
+                    <a href="../mcp/components.catalog.json">docs/mcp/components.catalog.json</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Token metadata</td>
+                  <td><a href="../mcp/tokens.catalog.json">docs/mcp/tokens.catalog.json</a></td>
+                </tr>
+                <tr>
+                  <td>Prompt recipes</td>
+                  <td><a href="../mcp/prompts.json">docs/mcp/prompts.json</a></td>
+                </tr>
+                <tr>
+                  <td>Human-readable class selection</td>
+                  <td><a href="../ai/class-decision-tree.md">docs/ai/class-decision-tree.md</a></td>
+                </tr>
+                <tr>
+                  <td>Copyable examples</td>
+                  <td><a href="../ai/component-snippets.md">docs/ai/component-snippets.md</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <pre class="demo-code"><code>1. Pick data-wa-theme.
+2. Choose data-wa-density or data-wa-contrast if needed.
+3. Compose layout primitives before components.
+4. Use documented wa-* classes only.
+5. Keep tabs, modals, dropdowns, and toasts behavior in app JavaScript.</code></pre>
         </section>
 
         <section class="wa-card wa-flow">
@@ -95,24 +182,51 @@
           <h2>Button API</h2>
           <div class="wa-table-wrap">
             <table class="wa-table wa-table--compact">
-              <thead><tr><th>Modifier</th><th>Use</th></tr></thead>
+              <thead>
+                <tr>
+                  <th>Modifier</th>
+                  <th>Use</th>
+                </tr>
+              </thead>
               <tbody>
-                <tr><td><code>wa-button--secondary</code></td><td>Secondary brand action.</td></tr>
-                <tr><td><code>wa-button--accent</code></td><td>Warm accent action.</td></tr>
-                <tr><td><code>wa-button--soft</code></td><td>Low-emphasis action.</td></tr>
-                <tr><td><code>wa-button--outline</code></td><td>Bordered primary action.</td></tr>
-                <tr><td><code>wa-button--danger</code></td><td>Destructive action.</td></tr>
-                <tr><td><code>wa-button--sm|lg|block|seal</code></td><td>Size and Japanese seal treatment.</td></tr>
+                <tr>
+                  <td><code>wa-button--secondary</code></td>
+                  <td>Secondary brand action.</td>
+                </tr>
+                <tr>
+                  <td><code>wa-button--accent</code></td>
+                  <td>Warm accent action.</td>
+                </tr>
+                <tr>
+                  <td><code>wa-button--soft</code></td>
+                  <td>Low-emphasis action.</td>
+                </tr>
+                <tr>
+                  <td><code>wa-button--outline</code></td>
+                  <td>Bordered primary action.</td>
+                </tr>
+                <tr>
+                  <td><code>wa-button--danger</code></td>
+                  <td>Destructive action.</td>
+                </tr>
+                <tr>
+                  <td><code>wa-button--sm|lg|block|seal</code></td>
+                  <td>Size and Japanese seal treatment.</td>
+                </tr>
               </tbody>
             </table>
           </div>
-          <pre class="demo-code"><code>&lt;button class="wa-button wa-button--soft"&gt;Save draft&lt;/button&gt;
+          <pre
+            class="demo-code"
+          ><code>&lt;button class="wa-button wa-button--soft"&gt;Save draft&lt;/button&gt;
 &lt;button class="wa-button wa-button--seal"&gt;Publish&lt;/button&gt;</code></pre>
         </section>
 
         <section id="card" class="wa-card wa-flow demo-api-section">
           <h2>Card API</h2>
-          <p class="wa-text-muted">Cards use a top rule and paper-like surface. Use variants sparingly.</p>
+          <p class="wa-text-muted">
+            Cards use a top rule and paper-like surface. Use variants sparingly.
+          </p>
           <pre class="demo-code"><code>&lt;article class="wa-card wa-card--washi wa-flow"&gt;
   &lt;h2&gt;Quiet article&lt;/h2&gt;
   &lt;p&gt;Layered paper surface and semantic spacing.&lt;/p&gt;
@@ -133,7 +247,9 @@
   &lt;input class="wa-input" type="email" aria-invalid="true" /&gt;
   &lt;span class="wa-error"&gt;Enter a valid email.&lt;/span&gt;
 &lt;/label&gt;</code></pre>
-          <p class="wa-text-muted">Use real labels, `aria-invalid`, and error text. Do not rely on color alone.</p>
+          <p class="wa-text-muted">
+            Use real labels, `aria-invalid`, and error text. Do not rely on color alone.
+          </p>
         </section>
 
         <section id="table" class="wa-card wa-flow demo-api-section">
@@ -151,7 +267,9 @@
   &lt;/div&gt;
   &lt;div class="wa-tabs__panel"&gt;...&lt;/div&gt;
 &lt;/div&gt;</code></pre>
-          <p class="wa-text-muted">CSS provides the surface. Add JavaScript only for actual tab switching behavior.</p>
+          <p class="wa-text-muted">
+            CSS provides the surface. Add JavaScript only for actual tab switching behavior.
+          </p>
         </section>
 
         <section id="feedback" class="wa-card wa-flow demo-api-section">
@@ -163,12 +281,16 @@
             <span class="wa-badge">wa-toast--success</span>
             <span class="wa-badge">wa-toast--danger</span>
           </div>
-          <pre class="demo-code"><code>&lt;p class="wa-alert wa-alert--success"&gt;Saved successfully.&lt;/p&gt;</code></pre>
+          <pre
+            class="demo-code"
+          ><code>&lt;p class="wa-alert wa-alert--success"&gt;Saved successfully.&lt;/p&gt;</code></pre>
         </section>
 
         <section id="charts" class="wa-card wa-flow demo-api-section">
           <h2>Charts API</h2>
-          <pre class="demo-code"><code>&lt;div class="wa-donut wa-donut--accent" style="--wa-donut-value: 72%"&gt;
+          <pre
+            class="demo-code"
+          ><code>&lt;div class="wa-donut wa-donut--accent" style="--wa-donut-value: 72%"&gt;
   &lt;span class="wa-donut__value"&gt;72%&lt;/span&gt;
 &lt;/div&gt;
 
@@ -179,7 +301,9 @@
 
         <section id="overlay" class="wa-card wa-flow demo-api-section">
           <h2>Overlay surfaces</h2>
-          <p class="wa-text-muted">Modal, dropdown, and toast styles are CSS-only surfaces. Add behavior in your app layer.</p>
+          <p class="wa-text-muted">
+            Modal, dropdown, and toast styles are CSS-only surfaces. Add behavior in your app layer.
+          </p>
           <pre class="demo-code"><code>&lt;div class="wa-modal"&gt;
   &lt;h2&gt;Confirm&lt;/h2&gt;
   &lt;p&gt;Use app JavaScript for focus trap and close behavior.&lt;/p&gt;

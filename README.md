@@ -31,10 +31,14 @@ npm install iroha-css
       <div class="wa-stack">
         <p class="wa-hero__kicker">Human-feeling CSS</p>
         <h1 class="wa-hero__title">A quieter layout language for AI-built websites.</h1>
-        <p class="wa-text-muted">Use semantic classes, role-based tokens, and asymmetrical rhythm.</p>
+        <p class="wa-text-muted">
+          Use semantic classes, role-based tokens, and asymmetrical rhythm.
+        </p>
         <a class="wa-button" href="#docs">Read the docs</a>
       </div>
-      <div class="wa-card wa-card--quiet wa-offset">Designed for restraint, contrast, and intent.</div>
+      <div class="wa-card wa-card--quiet wa-offset">
+        Designed for restraint, contrast, and intent.
+      </div>
     </div>
   </section>
 </main>
@@ -56,6 +60,15 @@ Core components are CSS-only: `wa-button`, `wa-card`, `wa-hero`, `wa-nav`, `wa-f
 
 Read the AI-facing guides in `docs/ai/`. They tell Codex, Cursor, and Claude Code to use semantic classes, avoid raw hex colors, preserve the `wa-` prefix, and avoid generic AI-looking layouts.
 
+For AI agents, start with:
+
+- `docs/ai/class-decision-tree.md`
+- `docs/ai/component-snippets.md`
+- `docs/ai/accessibility.md`
+- `docs/mcp/classes.manifest.json`
+- `docs/mcp/components.catalog.json`
+- `docs/mcp/tokens.catalog.json`
+
 ## Documentation
 
 Start with `docs/en/getting-started.md`, then inspect `docs/mcp/iroha-css.context.md` for a structured AI-readable overview.
@@ -66,7 +79,7 @@ View the live demo on GitHub Pages: [https://tzks.github.io/iroha-css/](https://
 
 The demo includes a theme color comparison, expanded component gallery with charts and feedback surfaces, layout pattern gallery, and full-page examples.
 
-Library controls include `data-wa-theme`, `data-wa-density`, and `data-wa-contrast`, plus a small reference-oriented utility set. The component catalog documents variants, state classes, and implementation notes for practical adoption.
+Library controls include `data-wa-theme`, `data-wa-density`, and `data-wa-contrast`, plus a small reference-oriented utility set. The component catalog documents variants, state classes, and implementation notes for practical adoption. The MCP-style JSON files provide a machine-readable contract so AI tools can select documented classes instead of inventing one-off UI.
 
 ## Accessibility
 
