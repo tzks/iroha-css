@@ -1,0 +1,124 @@
+.wa-choice,
+.wa-checkbox,
+.wa-radio {
+  align-items: start;
+  color: var(--wa-color-text);
+  display: inline-grid;
+  gap: var(--wa-space-2);
+  grid-template-columns: auto 1fr;
+}
+
+.wa-choice input {
+  accent-color: var(--wa-color-primary);
+  block-size: 1.1em;
+  inline-size: 1.1em;
+  margin-block-start: 0.18em;
+}
+
+.wa-switch {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--wa-space-2);
+}
+
+.wa-switch input {
+  appearance: none;
+  background: var(--wa-color-surface-muted);
+  block-size: 1.45rem;
+  border: 1px solid var(--wa-color-border);
+  border-radius: var(--wa-radius-pill);
+  inline-size: 2.65rem;
+  position: relative;
+}
+
+.wa-switch input::before {
+  background: var(--wa-color-text-muted);
+  block-size: 1rem;
+  border-radius: var(--wa-radius-pill);
+  content: "";
+  inline-size: 1rem;
+  inset-block-start: 0.17rem;
+  inset-inline-start: 0.2rem;
+  position: absolute;
+  transition:
+    inset-inline-start var(--wa-duration-fast) var(--wa-ease-standard),
+    background var(--wa-duration-fast) var(--wa-ease-standard);
+}
+
+.wa-switch input:checked {
+  background: color-mix(in srgb, var(--wa-color-primary), var(--wa-color-surface) 72%);
+  border-color: var(--wa-color-primary);
+}
+
+.wa-switch input:checked::before {
+  background: var(--wa-color-primary);
+  inset-inline-start: 1.35rem;
+}
+
+.wa-range {
+  accent-color: var(--wa-color-primary);
+  inline-size: 100%;
+}
+
+.wa-file-upload {
+  background: var(--wa-color-surface-muted);
+  border: 1px dashed var(--wa-color-border);
+  color: var(--wa-color-text);
+  display: grid;
+  gap: var(--wa-space-2);
+  place-items: start;
+  padding: var(--wa-space-5);
+}
+
+.wa-file-upload :where(input) {
+  font: inherit;
+}
+
+.wa-search {
+  align-items: center;
+  background: var(--wa-input-bg);
+  border-block-end: 1px solid var(--wa-input-border);
+  display: flex;
+  gap: var(--wa-space-2);
+  padding-inline: var(--wa-space-2);
+}
+
+.wa-search::before {
+  color: var(--wa-color-text-muted);
+  content: "search";
+  font-size: var(--wa-text-sm);
+}
+
+.wa-search .wa-input,
+.wa-search :where(input) {
+  border: 0;
+  min-inline-size: 0;
+  padding-inline: 0;
+}
+
+.wa-input-group {
+  align-items: stretch;
+  display: flex;
+  inline-size: 100%;
+}
+
+.wa-input-group > * {
+  border-radius: 0;
+}
+
+.wa-input-group > :first-child {
+  border-start-start-radius: var(--wa-input-radius);
+}
+
+.wa-input-group > :last-child {
+  border-start-end-radius: var(--wa-input-radius);
+}
+
+.wa-input-addon {
+  align-items: center;
+  background: var(--wa-color-surface-muted);
+  border-block-end: 1px solid var(--wa-input-border);
+  color: var(--wa-color-text-muted);
+  display: inline-flex;
+  padding: var(--wa-space-3);
+}

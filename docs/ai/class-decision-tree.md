@@ -66,8 +66,45 @@ Use this file before composing UI with iroha-css.
 - Text control: `wa-input`.
 - Select control: `wa-select`.
 - Multi-line text: `wa-textarea`.
+- Binary choices: `wa-checkbox`, `wa-radio`, `wa-switch`.
+- Numeric slider: `wa-range`.
+- Upload control: `wa-file-upload`.
+- Search field: `wa-search`.
+- Prefix/suffix groups: `wa-input-group`, `wa-input-addon`.
 - Error state: `wa-field--invalid`, `aria-invalid="true"`, and `wa-error`.
 - Helper text: `wa-field__hint`.
+
+## Selection and Filtering
+
+- Searchable select surface: `wa-combobox`.
+- Command palette surface: `wa-command`.
+- Filter row: `wa-filter-bar`.
+- Mode switcher: `wa-segmented-control`.
+- Editable tags: `wa-tag-input`.
+
+These are visual surfaces. Application code must provide keyboard behavior, state, and filtering.
+
+## Work Screens
+
+- App shell: `wa-app-shell`, `wa-app-shell__main`.
+- Side navigation: `wa-side-nav`.
+- Top navigation: `wa-top-nav`.
+- Page title and actions: `wa-page-header`.
+- Repeated menu surface: `wa-menu`, `wa-menu__item`.
+- Inline actions: `wa-toolbar`.
+- Persistent bottom or grouped actions: `wa-action-bar`.
+- List/detail layout: `wa-master-detail`, `wa-detail-panel`.
+- Settings layout: `wa-settings-section`.
+
+## Overlays
+
+- Side panel: `wa-drawer`.
+- Bottom sheet or mobile action surface: `wa-sheet`.
+- Small anchored content: `wa-popover`.
+- Short help text: `wa-tooltip`.
+- Right-click or action menu surface: `wa-context-menu`.
+
+Use app JavaScript for positioning, focus handling, dismissal, and keyboard behavior.
 
 ## Japanese Helpers
 
@@ -76,5 +113,11 @@ Use this file before composing UI with iroha-css.
 - Seal mark: `wa-seal`.
 - Crest mark: `wa-kamon`.
 - Short vertical label: `wa-vertical`.
+- Split curtain surface: `wa-noren`.
+- Vertical poetry/card strip: `wa-tanzaku`.
+- Grid paper or shoji surface: `wa-shoji`.
+- Ink-like divider: `wa-ink-line`.
+- Seasonal marker: `wa-season-mark`.
+- Small label seal: `wa-label-seal`.
 
 Use helpers with restraint. They should support hierarchy or brand tone, not decorate every component.

@@ -44,6 +44,7 @@
           <a class="wa-chip" href="#feedback">Feedback</a>
           <a class="wa-chip" href="#charts">Charts</a>
           <a class="wa-chip" href="#overlay">Overlay</a>
+          <a class="wa-chip" href="#extended">Extended</a>
           <a class="wa-chip" href="#ai-contract">AI contract</a>
         </nav>
 
@@ -92,15 +93,20 @@
                   <td>Components</td>
                   <td>
                     <code
-                      >wa-button wa-card wa-tabs wa-table wa-donut wa-progress wa-modal
-                      wa-toast</code
+                      >wa-button wa-card wa-tabs wa-table wa-donut wa-progress wa-modal wa-toast
+                      wa-switch wa-combobox wa-drawer wa-kpi-card</code
                     >
                   </td>
                   <td>CSS-only UI surfaces that inherit theme roles.</td>
                 </tr>
                 <tr>
                   <td>Japanese helpers</td>
-                  <td><code>wa-washi wa-kamon wa-seal wa-kasane wa-vertical</code></td>
+                  <td>
+                    <code
+                      >wa-washi wa-kamon wa-seal wa-kasane wa-vertical wa-noren wa-tanzaku
+                      wa-shoji</code
+                    >
+                  </td>
                   <td>Paper, seal, crest, layering, and vertical rhythm.</td>
                 </tr>
                 <tr>
@@ -308,6 +314,88 @@
   &lt;h2&gt;Confirm&lt;/h2&gt;
   &lt;p&gt;Use app JavaScript for focus trap and close behavior.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
+        </section>
+
+        <section id="extended" class="wa-card wa-flow demo-api-section">
+          <h2>Extended component groups</h2>
+          <div class="wa-table-wrap">
+            <table class="wa-table wa-table--compact">
+              <thead>
+                <tr>
+                  <th>Group</th>
+                  <th>Classes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Inputs</td>
+                  <td>
+                    <code
+                      >wa-checkbox wa-radio wa-switch wa-range wa-file-upload wa-search
+                      wa-input-group</code
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Selection</td>
+                  <td>
+                    <code
+                      >wa-combobox wa-command wa-filter-bar wa-segmented-control wa-tag-input</code
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Status</td>
+                  <td>
+                    <code
+                      >wa-banner wa-inline-status wa-loading wa-spinner wa-result
+                      wa-error-state</code
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Data</td>
+                  <td>
+                    <code
+                      >wa-kpi-card wa-description-list wa-data-list wa-calendar wa-sparkline
+                      wa-gauge</code
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Navigation and patterns</td>
+                  <td>
+                    <code
+                      >wa-side-nav wa-top-nav wa-menu wa-app-shell wa-page-header wa-toolbar
+                      wa-action-bar wa-master-detail</code
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Overlays</td>
+                  <td><code>wa-drawer wa-popover wa-tooltip wa-context-menu wa-sheet</code></td>
+                </tr>
+                <tr>
+                  <td>Japanese concept</td>
+                  <td>
+                    <code
+                      >wa-noren wa-tanzaku wa-shoji wa-ink-line wa-season-mark wa-label-seal</code
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <pre
+            class="demo-code"
+          ><code>&lt;label class="wa-switch"&gt;&lt;input type="checkbox" /&gt; Public&lt;/label&gt;
+
+&lt;div class="wa-filter-bar"&gt;
+  &lt;label class="wa-search"&gt;&lt;input class="wa-input" /&gt;&lt;/label&gt;
+  &lt;div class="wa-segmented-control"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;aside class="wa-drawer"&gt;Drawer content&lt;/aside&gt;</code></pre>
         </section>
       </div>
     </main>

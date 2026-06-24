@@ -1,9 +1,18 @@
 .wa-washi {
   background:
     radial-gradient(circle at 20% 20%, rgb(255 255 255 / 38%), transparent 24%),
-    linear-gradient(135deg, rgb(255 255 255 / 24%) 0 25%, transparent 25% 50%, rgb(35 32 31 / 3%) 50% 75%, transparent 75%),
+    linear-gradient(
+      135deg,
+      rgb(255 255 255 / 24%) 0 25%,
+      transparent 25% 50%,
+      rgb(35 32 31 / 3%) 50% 75%,
+      transparent 75%
+    ),
     var(--wa-color-surface-muted);
-  background-size: 100% 100%, 1.25rem 1.25rem, auto;
+  background-size:
+    100% 100%,
+    1.25rem 1.25rem,
+    auto;
   border: 1px solid var(--wa-color-border);
 }
 
@@ -56,4 +65,84 @@
   line-height: 1.8;
   text-orientation: mixed;
   writing-mode: vertical-rl;
+}
+
+.wa-noren {
+  background:
+    linear-gradient(90deg, transparent 0 1px, rgb(255 255 255 / 16%) 1px 2px),
+    var(--wa-color-primary);
+  color: var(--wa-color-primary-contrast);
+  display: flex;
+  gap: 1px;
+  padding-block-start: var(--wa-space-3);
+}
+
+.wa-noren > * {
+  border-inline-end: 1px solid rgb(255 255 255 / 24%);
+  flex: 1;
+  min-block-size: 5rem;
+  padding: var(--wa-space-4) var(--wa-space-2);
+  text-align: center;
+}
+
+.wa-tanzaku {
+  background: var(--wa-color-surface);
+  border: 1px solid var(--wa-color-border);
+  border-block-start: 0.25rem solid var(--wa-color-accent);
+  box-shadow: 0.35rem 0.35rem 0 var(--wa-color-surface-muted);
+  display: inline-grid;
+  min-block-size: 9rem;
+  padding: var(--wa-space-4) var(--wa-space-3);
+  place-items: center;
+  text-align: center;
+  writing-mode: vertical-rl;
+}
+
+.wa-shoji {
+  background:
+    linear-gradient(var(--wa-color-rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--wa-color-rule) 1px, transparent 1px), var(--wa-color-surface);
+  background-size: 3rem 3rem;
+  border: 1px solid var(--wa-color-border);
+}
+
+.wa-ink-line {
+  position: relative;
+}
+
+.wa-ink-line::after {
+  background: linear-gradient(90deg, transparent, var(--wa-color-text), transparent);
+  block-size: 1px;
+  content: "";
+  display: block;
+  inline-size: 100%;
+  margin-block-start: var(--wa-space-3);
+  opacity: 0.55;
+}
+
+.wa-season-mark {
+  align-items: center;
+  aspect-ratio: 1;
+  background: color-mix(in srgb, var(--wa-color-accent), var(--wa-color-surface) 68%);
+  border: 1px solid var(--wa-color-border);
+  border-radius: var(--wa-radius-pill);
+  color: var(--wa-color-text);
+  display: inline-flex;
+  font-family: var(--wa-font-serif);
+  inline-size: var(--wa-season-mark-size, 2.5rem);
+  justify-content: center;
+}
+
+.wa-label-seal {
+  align-items: center;
+  background: var(--wa-color-danger);
+  border-radius: var(--wa-radius-sm);
+  color: var(--wa-color-primary-contrast);
+  display: inline-flex;
+  font-family: var(--wa-font-serif);
+  font-size: var(--wa-text-sm);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  padding: var(--wa-space-1) var(--wa-space-2);
 }

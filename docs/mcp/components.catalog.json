@@ -179,6 +179,126 @@
       "variants": ["wa-washi", "wa-kasane", "wa-seal", "wa-kamon", "wa-vertical"],
       "useWhen": "Adding meaningful paper, seal, crest, layered, or vertical Japanese tone.",
       "avoidWhen": "Decorating every component without hierarchy."
+    },
+    {
+      "name": "extended-inputs",
+      "class": "wa-checkbox",
+      "category": "form",
+      "variants": [
+        "wa-checkbox",
+        "wa-radio",
+        "wa-switch",
+        "wa-range",
+        "wa-file-upload",
+        "wa-search",
+        "wa-input-group"
+      ],
+      "accessibility": ["Use native inputs inside these wrappers.", "Keep visible labels."],
+      "useWhen": "Forms need binary choices, search, grouped fields, range values, or uploads.",
+      "avoidWhen": "A plain wa-input or wa-select is enough."
+    },
+    {
+      "name": "selection-controls",
+      "class": "wa-combobox",
+      "category": "interactive",
+      "variants": [
+        "wa-combobox",
+        "wa-command",
+        "wa-filter-bar",
+        "wa-segmented-control",
+        "wa-tag-input"
+      ],
+      "requiresBehavior": true,
+      "accessibility": ["Application code must manage selection state and keyboard interaction."],
+      "useWhen": "Users need filtering, command selection, segmented modes, or editable tags.",
+      "avoidWhen": "A native select is sufficient."
+    },
+    {
+      "name": "extended-feedback",
+      "class": "wa-banner",
+      "category": "feedback",
+      "variants": [
+        "wa-banner",
+        "wa-inline-status",
+        "wa-loading",
+        "wa-spinner",
+        "wa-result",
+        "wa-error-state"
+      ],
+      "accessibility": [
+        "Pair visual states with text.",
+        "Use live regions in app code for dynamic updates."
+      ],
+      "useWhen": "Pages need persistent notices, inline health, loading states, or result screens.",
+      "avoidWhen": "A simple inline validation error is enough."
+    },
+    {
+      "name": "extended-data",
+      "class": "wa-kpi-card",
+      "category": "data",
+      "variants": [
+        "wa-kpi-card",
+        "wa-description-list",
+        "wa-data-list",
+        "wa-calendar",
+        "wa-sparkline",
+        "wa-gauge"
+      ],
+      "accessibility": [
+        "Provide text values for visual indicators.",
+        "Use tables for dense comparable data."
+      ],
+      "useWhen": "Operational screens need KPIs, metadata, compact lists, calendars, or simple trend visuals.",
+      "avoidWhen": "Users need full chart interaction."
+    },
+    {
+      "name": "app-navigation",
+      "class": "wa-app-shell",
+      "category": "navigation",
+      "variants": ["wa-side-nav", "wa-top-nav", "wa-menu", "wa-app-shell", "wa-page-header"],
+      "useWhen": "Building admin, SaaS, or documentation shells.",
+      "avoidWhen": "The page is a simple editorial document."
+    },
+    {
+      "name": "overlay-surfaces",
+      "class": "wa-drawer",
+      "category": "interactive",
+      "variants": ["wa-drawer", "wa-popover", "wa-tooltip", "wa-context-menu", "wa-sheet"],
+      "requiresBehavior": true,
+      "accessibility": [
+        "Application code must handle positioning, focus, dismissal, and keyboard behavior."
+      ],
+      "useWhen": "A page needs layered detail, contextual help, menus, or mobile sheet surfaces.",
+      "avoidWhen": "Inline content is clearer."
+    },
+    {
+      "name": "work-screen-patterns",
+      "class": "wa-toolbar",
+      "category": "layout",
+      "variants": [
+        "wa-toolbar",
+        "wa-action-bar",
+        "wa-detail-panel",
+        "wa-master-detail",
+        "wa-settings-section"
+      ],
+      "useWhen": "Building repeated operational workflows with actions, lists, details, and settings.",
+      "avoidWhen": "A content page only needs section and stack rhythm."
+    },
+    {
+      "name": "japanese-concept-surfaces",
+      "class": "wa-noren",
+      "category": "japanese",
+      "variants": [
+        "wa-noren",
+        "wa-tanzaku",
+        "wa-shoji",
+        "wa-ink-line",
+        "wa-season-mark",
+        "wa-label-seal"
+      ],
+      "useWhen": "A brand or editorial surface needs stronger Japanese visual identity.",
+      "avoidWhen": "The UI is dense and repeated, where decoration would reduce scanning."
     }
   ]
 }

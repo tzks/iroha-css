@@ -1,0 +1,45 @@
+.wa-drawer,
+.wa-sheet,
+.wa-popover,
+.wa-tooltip,
+.wa-context-menu {
+  background: var(--wa-color-surface);
+  border: 1px solid var(--wa-color-border);
+  box-shadow: var(--wa-shadow-lg);
+  color: var(--wa-color-text);
+}
+
+.wa-drawer {
+  block-size: 100%;
+  inline-size: min(100%, var(--wa-drawer-width, 24rem));
+  padding: var(--wa-space-6);
+}
+
+.wa-drawer--end {
+  margin-inline-start: auto;
+}
+
+.wa-sheet {
+  border-radius: var(--wa-radius-sm) var(--wa-radius-sm) 0 0;
+  inline-size: 100%;
+  padding: var(--wa-space-6);
+}
+
+.wa-popover,
+.wa-context-menu {
+  min-inline-size: 14rem;
+  padding: var(--wa-space-3);
+}
+
+.wa-tooltip {
+  background: var(--wa-color-text);
+  color: var(--wa-color-bg);
+  font-size: var(--wa-text-sm);
+  max-inline-size: 18rem;
+  padding: var(--wa-space-2) var(--wa-space-3);
+}
+
+.wa-context-menu {
+  display: grid;
+  gap: var(--wa-space-1);
+}

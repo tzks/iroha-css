@@ -1,0 +1,124 @@
+.wa-kpi-card {
+  background: var(--wa-card-bg);
+  border: var(--wa-card-border);
+  border-block-start: 0.2rem solid var(--wa-color-primary);
+  color: var(--wa-card-color);
+  display: grid;
+  gap: var(--wa-space-3);
+  padding: var(--wa-card-padding);
+}
+
+.wa-kpi-card__value {
+  font-family: var(--wa-font-serif);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1;
+}
+
+.wa-kpi-card__trend {
+  color: var(--wa-color-text-muted);
+  font-size: var(--wa-text-sm);
+}
+
+.wa-description-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  margin: 0;
+}
+
+.wa-description-list dt,
+.wa-description-list dd {
+  border-block-end: 1px solid var(--wa-color-border);
+  margin: 0;
+  padding: var(--wa-space-3);
+}
+
+.wa-description-list dt {
+  color: var(--wa-color-text-muted);
+}
+
+.wa-data-list {
+  border-block: 1px solid var(--wa-color-border);
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wa-data-list__item {
+  align-items: center;
+  border-block-end: 1px solid var(--wa-color-border);
+  display: grid;
+  gap: var(--wa-space-3);
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: var(--wa-space-3) 0;
+}
+
+.wa-calendar {
+  border: 1px solid var(--wa-color-border);
+  display: grid;
+  grid-template-columns: repeat(7, minmax(2rem, 1fr));
+}
+
+.wa-calendar__cell {
+  aspect-ratio: 1;
+  border: 0;
+  border-block-end: 1px solid var(--wa-color-border);
+  border-inline-end: 1px solid var(--wa-color-border);
+  color: var(--wa-color-text);
+  display: grid;
+  font-size: var(--wa-text-sm);
+  place-items: center;
+}
+
+.wa-calendar__cell[aria-current="date"] {
+  background: var(--wa-color-primary);
+  color: var(--wa-color-primary-contrast);
+}
+
+.wa-sparkline {
+  block-size: 2.5rem;
+  inline-size: 100%;
+}
+
+.wa-sparkline polyline,
+.wa-sparkline path {
+  fill: none;
+  stroke: var(--wa-color-primary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.wa-gauge {
+  --wa-gauge-value: 60%;
+  --wa-gauge-size: 9rem;
+
+  aspect-ratio: 2 / 1;
+  background: conic-gradient(
+    from 270deg,
+    var(--wa-color-primary) 0 var(--wa-gauge-value),
+    var(--wa-color-surface-muted) var(--wa-gauge-value) 50%,
+    transparent 50% 100%
+  );
+  border-radius: var(--wa-gauge-size) var(--wa-gauge-size) 0 0;
+  inline-size: var(--wa-gauge-size);
+  overflow: hidden;
+  position: relative;
+}
+
+.wa-gauge::after {
+  background: var(--wa-color-surface);
+  border-radius: inherit;
+  content: "";
+  inset: 1rem 1rem 0;
+  position: absolute;
+}
+
+.wa-gauge__value {
+  color: var(--wa-color-text);
+  font-family: var(--wa-font-serif);
+  inset: auto 0 var(--wa-space-2);
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}

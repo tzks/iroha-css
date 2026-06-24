@@ -62,7 +62,15 @@
       "wa-input",
       "wa-select",
       "wa-textarea",
-      "wa-error"
+      "wa-error",
+      "wa-checkbox",
+      "wa-radio",
+      "wa-switch",
+      "wa-range",
+      "wa-file-upload",
+      "wa-search",
+      "wa-input-group",
+      "wa-input-addon"
     ],
     "navigation": [
       "wa-nav",
@@ -71,7 +79,15 @@
       "wa-page",
       "wa-dropdown",
       "wa-dropdown__menu",
-      "wa-dropdown__item"
+      "wa-dropdown__item",
+      "wa-side-nav",
+      "wa-top-nav",
+      "wa-menu",
+      "wa-menu__item",
+      "wa-app-shell",
+      "wa-app-shell__main",
+      "wa-page-header",
+      "wa-page-header__title"
     ],
     "feedback": [
       "wa-alert",
@@ -84,7 +100,17 @@
       "wa-toast--danger",
       "wa-empty",
       "wa-empty__mark",
-      "wa-skeleton"
+      "wa-skeleton",
+      "wa-banner",
+      "wa-inline-status",
+      "wa-inline-status--danger",
+      "wa-inline-status--warning",
+      "wa-loading",
+      "wa-spinner",
+      "wa-result",
+      "wa-result__mark",
+      "wa-error-state",
+      "wa-error-state__mark"
     ],
     "data": [
       "wa-table-wrap",
@@ -108,7 +134,18 @@
       "wa-bar-chart__bar",
       "wa-meter",
       "wa-meter__track",
-      "wa-meter__marker"
+      "wa-meter__marker",
+      "wa-kpi-card",
+      "wa-kpi-card__value",
+      "wa-kpi-card__trend",
+      "wa-description-list",
+      "wa-data-list",
+      "wa-data-list__item",
+      "wa-calendar",
+      "wa-calendar__cell",
+      "wa-sparkline",
+      "wa-gauge",
+      "wa-gauge__value"
     ],
     "content": [
       "wa-hero",
@@ -150,9 +187,45 @@
       "wa-accordion__item",
       "wa-accordion__content",
       "wa-stepper",
-      "wa-stepper__item"
+      "wa-stepper__item",
+      "wa-drawer",
+      "wa-drawer--end",
+      "wa-popover",
+      "wa-tooltip",
+      "wa-context-menu",
+      "wa-sheet"
     ],
-    "japanese": ["wa-washi", "wa-kasane", "wa-seal", "wa-kamon", "wa-vertical"]
+    "japanese": [
+      "wa-washi",
+      "wa-kasane",
+      "wa-seal",
+      "wa-kamon",
+      "wa-vertical",
+      "wa-noren",
+      "wa-tanzaku",
+      "wa-shoji",
+      "wa-ink-line",
+      "wa-season-mark",
+      "wa-label-seal"
+    ],
+    "selection": [
+      "wa-combobox",
+      "wa-combobox__list",
+      "wa-combobox__option",
+      "wa-command",
+      "wa-command__list",
+      "wa-command__item",
+      "wa-filter-bar",
+      "wa-segmented-control",
+      "wa-tag-input"
+    ],
+    "patterns": [
+      "wa-toolbar",
+      "wa-action-bar",
+      "wa-detail-panel",
+      "wa-master-detail",
+      "wa-settings-section"
+    ]
   },
   "utilities": [
     "wa-visually-hidden",

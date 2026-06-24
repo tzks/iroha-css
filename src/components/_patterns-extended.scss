@@ -1,0 +1,49 @@
+.wa-toolbar,
+.wa-action-bar {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--wa-space-3);
+}
+
+.wa-toolbar {
+  border-block-end: 1px solid var(--wa-color-border);
+  padding-block-end: var(--wa-space-3);
+}
+
+.wa-action-bar {
+  background: var(--wa-color-surface);
+  border: 1px solid var(--wa-color-border);
+  box-shadow: var(--wa-shadow-sm);
+  justify-content: space-between;
+  padding: var(--wa-space-3) var(--wa-space-4);
+}
+
+.wa-detail-panel {
+  background: var(--wa-color-surface);
+  border-inline-start: 1px solid var(--wa-color-border);
+  display: grid;
+  gap: var(--wa-space-4);
+  padding: var(--wa-space-5);
+}
+
+.wa-master-detail {
+  display: grid;
+  gap: var(--wa-space-5);
+  grid-template-columns: minmax(16rem, 0.9fr) minmax(0, 1.4fr);
+}
+
+.wa-settings-section {
+  border-block-start: 1px solid var(--wa-color-border);
+  display: grid;
+  gap: var(--wa-space-4);
+  grid-template-columns: minmax(12rem, 0.65fr) minmax(0, 1.35fr);
+  padding-block-start: var(--wa-space-5);
+}
+
+@media (width < 48rem) {
+  .wa-master-detail,
+  .wa-settings-section {
+    grid-template-columns: 1fr;
+  }
+}
