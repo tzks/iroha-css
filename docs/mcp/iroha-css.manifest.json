@@ -21,6 +21,12 @@
     "antiAiLayout": "docs/ai/anti-ai-layout.md",
     "stability": "docs/ai/stability-policy.md"
   },
+  "qualityDocs": {
+    "visualRegression": "docs/quality/visual-regression.md",
+    "accessibilityMatrix": "docs/quality/accessibility-matrix.md",
+    "releaseChecklist": "docs/quality/release-checklist.md",
+    "recipes": "docs/recipes/index.html"
+  },
   "machineReadable": {
     "classes": "docs/mcp/classes.manifest.json",
     "componentCatalog": "docs/mcp/components.catalog.json",

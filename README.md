@@ -65,6 +65,7 @@ For AI agents, start with:
 - `docs/ai/class-decision-tree.md`
 - `docs/ai/component-snippets.md`
 - `docs/ai/accessibility.md`
+- `docs/recipes/index.html`
 - `docs/mcp/classes.manifest.json`
 - `docs/mcp/components.catalog.json`
 - `docs/mcp/tokens.catalog.json`
@@ -72,6 +73,8 @@ For AI agents, start with:
 ## Documentation
 
 Start with `docs/en/getting-started.md`, then inspect `docs/mcp/iroha-css.context.md` for a structured AI-readable overview.
+
+Quality gates live in `docs/quality/`. Use the visual regression checklist, accessibility matrix, release checklist, and `npm run verify` before publishing.
 
 ## GitHub Pages Demo
 

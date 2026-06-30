@@ -19,6 +19,14 @@
     {
       "name": "repair-generic-ai-layout",
       "text": "Refactor this UI to use iroha-css. Replace invented classes with documented wa-* classes, remove raw colors, reduce nested cards, and choose layout primitives from wa-stack, wa-grid, wa-split, wa-sidebar, wa-editorial, and wa-reel."
+    },
+    {
+      "name": "settings-page-recipe",
+      "text": "Create a production settings page with iroha-css. Use wa-page-header, wa-settings-section, wa-form, wa-switch, wa-input-group, wa-action-bar, visible labels, and no invented classes."
+    },
+    {
+      "name": "filterable-data-recipe",
+      "text": "Create a filterable data screen with iroha-css. Use wa-app-shell, wa-page-header, wa-filter-bar, wa-search, wa-segmented-control, wa-table-wrap, wa-table, wa-drawer for optional detail, and accessible text values."
     }
   ],
   "globalRules": [

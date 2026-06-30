@@ -43,7 +43,8 @@
     "build": "node scripts/build.mjs",
     "lint": "stylelint \"src/**/*.scss\"",
     "format": "prettier --write \"**/*.{md,scss,css,js,json,html,yml}\"",
-    "check": "npm run lint && npm run build",
+    "verify": "node scripts/verify-library.mjs",
+    "check": "npm run lint && npm run build && npm run verify",
     "pack:check": "npm pack --dry-run --cache ./.npm-cache"
   },
   "devDependencies": {

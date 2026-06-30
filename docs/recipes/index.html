@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" data-wa-theme="matcha">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipes - iroha-css Demo</title>
+    <link rel="stylesheet" href="../dist/iroha.css" />
+    <link rel="stylesheet" href="../assets/demo.css" />
+  </head>
+  <body>
+    <header class="wa-container wa-nav demo-example-nav">
+      <a class="demo-mark" href="../">iroha-css</a>
+      <nav class="wa-cluster" aria-label="Demo navigation">
+        <a href="../components/">Components</a>
+        <a href="../layouts/">Layouts</a>
+        <a href="../reference/">Reference</a>
+      </nav>
+    </header>
+    <main class="wa-section">
+      <div class="wa-container wa-stack wa-space-6">
+        <div class="wa-page-header">
+          <div class="wa-flow">
+            <p class="wa-hero__kicker">Recipes</p>
+            <h1 class="wa-page-header__title">Practical page patterns for AI-built interfaces</h1>
+            <p class="wa-text-muted">
+              Use these recipes as high-quality starting points before inventing custom structure.
+            </p>
+          </div>
+          <a class="wa-button wa-button--soft" href="../mcp/prompts.json">Prompt data</a>
+        </div>
+
+        <section class="wa-grid" style="--wa-grid-min: 18rem">
+          <article class="wa-card wa-card--washi wa-flow">
+            <span class="wa-label-seal">Admin</span>
+            <h2>Operational Dashboard</h2>
+            <p class="wa-text-muted">
+              Use `wa-app-shell`, `wa-side-nav`, `wa-page-header`, KPI cards, charts, and table
+              surfaces.
+            </p>
+            <pre
+              class="demo-code"
+            ><code>&lt;main class="wa-app-shell" data-wa-theme="sumi" data-wa-density="compact"&gt;
+  &lt;nav class="wa-side-nav"&gt;...&lt;/nav&gt;
+  &lt;section class="wa-app-shell__main wa-stack wa-p-4"&gt;
+    &lt;header class="wa-page-header"&gt;...&lt;/header&gt;
+    &lt;div class="wa-grid"&gt;
+      &lt;article class="wa-kpi-card"&gt;...&lt;/article&gt;
+      &lt;div class="wa-gauge"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+          </article>
+
+          <article class="wa-card wa-flow">
+            <span class="wa-label-seal">Settings</span>
+            <h2>Settings Page</h2>
+            <p class="wa-text-muted">
+              Use `wa-settings-section`, native controls, visible labels, and compact action bars.
+            </p>
+            <pre class="demo-code"><code>&lt;section class="wa-settings-section"&gt;
+  &lt;div&gt;&lt;h2&gt;Notifications&lt;/h2&gt;&lt;p class="wa-text-muted"&gt;Delivery preferences.&lt;/p&gt;&lt;/div&gt;
+  &lt;form class="wa-form"&gt;
+    &lt;label class="wa-switch"&gt;&lt;input type="checkbox" /&gt; Enable LINE notices&lt;/label&gt;
+    &lt;div class="wa-action-bar"&gt;...&lt;/div&gt;
+  &lt;/form&gt;
+&lt;/section&gt;</code></pre>
+          </article>
+
+          <article class="wa-card wa-flow">
+            <span class="wa-label-seal">Search</span>
+            <h2>Filterable Data Screen</h2>
+            <p class="wa-text-muted">Use filters above the table, not buried in a modal.</p>
+            <pre class="demo-code"><code>&lt;div class="wa-filter-bar"&gt;
+  &lt;label class="wa-search"&gt;&lt;input class="wa-input" placeholder="Search" /&gt;&lt;/label&gt;
+  &lt;div class="wa-segmented-control"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="wa-table-wrap"&gt;
+  &lt;table class="wa-table wa-table--striped"&gt;...&lt;/table&gt;
+&lt;/div&gt;</code></pre>
+          </article>
+
+          <article class="wa-card wa-card--washi wa-flow">
+            <span class="wa-label-seal">和</span>
+            <h2>Japanese Editorial Page</h2>
+            <p class="wa-text-muted">
+              Use Japanese concept components sparingly to create rhythm and identity.
+            </p>
+            <pre class="demo-code"><code>&lt;section class="wa-editorial"&gt;
+  &lt;div class="wa-flow wa-ink-line"&gt;
+    &lt;span class="wa-season-mark"&gt;春&lt;/span&gt;
+    &lt;h1 class="wa-hero__title"&gt;Quiet seasonal story&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;aside class="wa-tanzaku"&gt;余白&lt;/aside&gt;
+&lt;/section&gt;</code></pre>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
